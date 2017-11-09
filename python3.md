@@ -1,5 +1,5 @@
 
-[官网学习手册](https://docs.python.org/3/tutorial/)     [PyCharm集成开发环境下载](https://www.jetbrains.com/pycharm/download/)
+[官网学习指南](https://docs.python.org/3/tutorial/)     [PyCharm集成开发环境下载](https://www.jetbrains.com/pycharm/download/)
 
 ## 1. py文件声明部分
 
