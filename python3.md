@@ -18,3 +18,17 @@
 ```python
 # this is the first comment
 ```
+
+## 变量的使用
+
+### 数字
+
+```python
+width  =  20
+```
+
+### 字符串
+
+```python
+name  =  "李四"
+```
