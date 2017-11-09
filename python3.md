@@ -34,6 +34,21 @@ height  =  17 / 3
 name  =  "李四"
 ```
 
+#### 计算字符串长度
+
+```python
+len('Hello world')
+```
+
+#### 读取字符
+
+```python
+word = 'Hello world'
+word[0]
+word[1]
+...
+```
+
 ## 打印内容
 
 ### 打印固定文本
@@ -56,10 +71,4 @@ Usage: thingy [OPTIONS]
 
 ```python
 print(r'C:\some\name') # 此处使用'r'前缀，则\n不会被当做换行符
-```
-
-## 计算字符串长度
-
-```python
-len('Hello world')
 ```
