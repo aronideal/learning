@@ -58,3 +58,8 @@ Usage: thingy [OPTIONS]
 print(r'C:\some\name') # 此处使用'r'前缀，则\n不会被当做换行符
 ```
 
+## 计算字符串长度
+
+```python
+len('Hello world')
+```
