@@ -1,5 +1,5 @@
 
-## 一个.py文件开始
+## 一个.py文件内容的开始
 
 ```python
 #!/usr/bin/env python3
