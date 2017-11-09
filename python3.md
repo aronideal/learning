@@ -39,3 +39,13 @@ name  =  "李四"
 ```python
 print('Hello world')
 ```
+
+### 按格式打印
+
+```python
+print("""\
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect to
+""")
+```
