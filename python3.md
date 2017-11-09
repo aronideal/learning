@@ -1,4 +1,6 @@
 
+[官网学习手册](https://docs.python.org/3/tutorial/)
+
 ## 1. py文件声明部分
 
 ### 1.1. 指定设备环境
