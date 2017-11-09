@@ -25,10 +25,17 @@
 
 ```python
 width  =  20
+height  =  17 / 3
 ```
 
 ### 字符串
 
 ```python
 name  =  "李四"
+```
+
+## 打印内容
+
+```python
+print('Hello world')
 ```
