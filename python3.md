@@ -60,11 +60,11 @@ print('Hello world')
 ### 4.2. 按格式打印
 
 ```python
-print("""\
+print('''\
 Usage: thingy [OPTIONS]
      -h                        Display this usage message
      -H hostname               Hostname to connect to
-""")
+''')
 ```
 
 ### 4.3. 打印包括转义字符的内容
