@@ -36,13 +36,23 @@ height  =  17 / 3
 name  =  '李四'
 ```
 
-#### 3.2.1. 计算字符串长度
+#### 3.2.1. 字符串格式化
+
+```python
+'Hello {}, I\'m {}'.format('Mr.Li', 'here')
+'Hello {0}, I\'m {1}'.format('Mr.Li', 'here')
+'Hello {name}, I\'m {location}'.format(name='Mr.Li', location='here')
+'Hello {info[0]}, I\'m {info[1]}'.format(info=['Mr.Li', 'here'])
+'Hello {info[name]}, I\'m {info[location]}'.format(info={'name':'Mr.Li', 'location':'here'})
+```
+
+#### 3.2.2. 计算字符串长度
 
 ```python
 len('Hello world')
 ```
 
-#### 3.2.2. 读取字符
+#### 3.2.3. 读取字符
 
 ```python
 word = 'Hello world'
