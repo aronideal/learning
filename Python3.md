@@ -1,7 +1,7 @@
 
-## 一个py文件开始
+## 一个.py文件开始
 
-```python3
+```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 ```
