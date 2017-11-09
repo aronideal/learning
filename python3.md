@@ -51,3 +51,10 @@ Usage: thingy [OPTIONS]
      -H hostname               Hostname to connect to
 """)
 ```
+
+### 打印包括转义字符的内容
+
+```python
+print(r'C:\some\name') # 此处使用'r'前缀，则\n不会被当做换行符
+```
+
