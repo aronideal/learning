@@ -199,16 +199,25 @@ def func():
     print('This is a function')
 ```
 
+有参：
+
+```python
+def func(a, b=3): # b有默认值，可不传
+    print('This is a function')
+```
+
+有返回结果：
+
+```python
+def func(arg):
+    print('This is a function')
+    return True
+```
+
 ### 7.2. 调用函数
 
 ```python
 func()
-```
-
-### 7.3. 返回一个数据
-
-```python
-return True
 ```
 
 ## 8. 系统函数
