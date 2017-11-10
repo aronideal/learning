@@ -177,9 +177,16 @@ else:
 pass # 当成一个普通语句执行，但不会产生任何效果。需要一个空实现的时候使用
 ```
 
-## 7. 函数使用
+## 7. 自定义函数
 
-### 7.1. print 函数
+```python
+def func():
+    print('This is a function')
+```
+
+## 8. 系统函数
+
+### 8.1. print 函数
 
 ```python
 print('Hello world')
@@ -192,7 +199,7 @@ Usage: thingy [OPTIONS]
 ''') # 按格式打印
 ```
 
-### 7.2. range 函数
+### 8.2. range 函数
 
 ```python
 range(5) # == 0,1,2,3,4 （左包含到右不包含）
