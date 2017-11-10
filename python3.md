@@ -144,7 +144,7 @@ for n in [1,2,3]:
 break # 结束所在的循环体
 continue # 跳过当前循环索引
 else:
-    print('else 内容块') # 循环条件不满足被执行的部分（break之后不会触发）
+    print('else 内容块') # 循环条件不满足被触发（break之后不会触发）
 ```
 
 ## 6. 函数使用
