@@ -44,6 +44,7 @@ name  =  '李四'
 'Hello {name}, I\'m {location}'.format(name='Mr.Li', location='here')
 'Hello {info[0]}, I\'m {info[1]}'.format(info=['Mr.Li', 'here'])
 'Hello {info[name]}, I\'m {info[location]}'.format(info={'name':'Mr.Li', 'location':'here'})
+'Py'      'thon' # 中间以空格分割，结果会将字符串连接起来
 ```
 
 #### 3.2.2. 使用'\\'转义字符
