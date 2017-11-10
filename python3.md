@@ -46,13 +46,27 @@ name  =  '李四'
 'Hello {info[name]}, I\'m {info[location]}'.format(info={'name':'Mr.Li', 'location':'here'})
 ```
 
-#### 3.2.2. 计算字符串长度
+#### 3.2.2. 使用'\'转义字符
+
+```python
+'I\'m here.'
+"\"I'm here!\", she said."
+'space\ninput'
+```
+
+使用'r'前缀，'\'转义字符被当做普通字符处理
+
+```python
+r'C:\some\name' # win32系统中路径使用r的情况比较多
+```
+
+#### 3.2.3. 计算字符串长度
 
 ```python
 len('Hello world')
 ```
 
-#### 3.2.3. 读取字符
+#### 3.2.4. 读取字符
 
 ```python
 word = 'Hello world'
@@ -77,10 +91,4 @@ Usage: thingy [OPTIONS]
      -h                        Display this usage message
      -H hostname               Hostname to connect to
 ''')
-```
-
-### 4.3. 打印包括转义字符的内容
-
-```python
-print(r'C:\some\name') # 此处使用'r'前缀，则\n不会被当做换行符
 ```
