@@ -205,6 +205,12 @@ def func():
 func()
 ```
 
+### 7.3. 返回一个数据
+
+```python
+return True
+```
+
 ## 8. 系统函数
 
 ### 8.1. print 函数
