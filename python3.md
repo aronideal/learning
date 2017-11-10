@@ -115,7 +115,7 @@ print = 'Print by This'
 print('hello world') # 这里将报错，print已不再是函数
 ```
 
-# 4. if语句
+# 4. if 语句
 
 ```python
 if 22 > 11:
