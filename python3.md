@@ -120,6 +120,10 @@ print('hello world') # 这里将报错，print已不再是函数
 ```python
 if 22 > 11:
     print('22 > 11')
+elif 22 == 11:
+    print('22 == 11')
+else:
+    print('22 < 11')
 ```
 
 ## 5. 函数使用
