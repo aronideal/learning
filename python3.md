@@ -116,7 +116,7 @@ print = 'Print by This'
 print('hello world') # 这里将报错，print已不再是函数
 ```
 
-# 4. if 语句
+## 4. if 语句
 
 ```python
 if 22 > 11:
@@ -127,12 +127,23 @@ else:
     print('22 < 11')
 ```
 
-# 5. for 语句
+## 5. 循环
+
+### 5.1. for 语句
 
 ```python
 for n in [1,2,3]:
     print(n)
 ```
+
+### 5.2. while 语句
+
+### 5.3. 循环控制
+
+break # 结束所在的循环体
+continue # 跳过当前循环索引
+else:
+    print('else 内容块') # 循环条件不满足被执行的部分（break之后不会触发）
 
 ## 6. 函数使用
 
