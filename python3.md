@@ -155,6 +155,11 @@ else:
     print('22 < 11')
 ```
 
+in 关键字：
+
+if ok in ('y', 'ye', 'yes'):
+    print(ok)
+
 ## 5. 循环
 
 ### 5.1. for 语句
