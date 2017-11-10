@@ -76,6 +76,14 @@ word[1]
 ...
 ```
 
+### 3.3. 关键字可能被变量名称替代
+
+```python
+print('hello world')
+print = 'Print by This'
+print('hello world') # 这里将报错，print已不再是函数
+```
+
 ## 4. 打印内容
 
 ### 4.1. 打印固定文本
