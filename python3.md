@@ -162,6 +162,15 @@ if ok in ('y', 'ye', 'yes'):
     print(ok)
 ```
 
+is 和 ==：
+
+```python
+if [2] is [2]: # is是对象的比对，不成立
+    pass
+if [2] == [2]: # ==是值的比对，成立
+    pass
+```
+
 ## 5. 循环
 
 ### 5.1. for 语句
