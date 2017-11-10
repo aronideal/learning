@@ -121,6 +121,7 @@ print('hello world') # 这里将报错，print已不再是函数
 
 ```python
 print('Hello world')
+print('The value of i is', 2)
 ```
 
 ### 4.2. 按格式打印
