@@ -115,21 +115,19 @@ print = 'Print by This'
 print('hello world') # 这里将报错，print已不再是函数
 ```
 
-## 4. 打印内容
+## 4. 函数使用
 
-### 4.1. 打印固定文本
+### 4.1. 打印文本
 
 ```python
 print('Hello world')
 print('The value of i is', 2)
-```
-
-### 4.2. 按格式打印
-
-```python
+print('I have a dream', end='.') # end是关键字，在内容结尾追加内容
 print('''\
 Usage: thingy [OPTIONS]
      -h                        Display this usage message
      -H hostname               Hostname to connect to
-''')
+''') # 按格式打印
 ```
+
+
