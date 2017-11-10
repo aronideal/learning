@@ -225,7 +225,7 @@ type(None)
 type(print)
 ```
 
-返回
+返回：
 
     <class 'int'>
     <class 'NoneType'>
