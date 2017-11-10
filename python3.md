@@ -115,9 +115,16 @@ print = 'Print by This'
 print('hello world') # 这里将报错，print已不再是函数
 ```
 
-## 4. 函数使用
+# 4. if语句
 
-### 4.1. 打印文本
+```python
+if 22 > 11:
+    print('22 > 11')
+```
+
+## 5. 函数使用
+
+### 5.1. 打印文本
 
 ```python
 print('Hello world')
@@ -129,5 +136,4 @@ Usage: thingy [OPTIONS]
      -H hostname               Hostname to connect to
 ''') # 按格式打印
 ```
-
 
