@@ -119,7 +119,8 @@ list.insert(2, 66) # 在索引位置前插入值
 ### 3.4. 布尔值
 
 ```python
-# True，真；False，假
+True # 真
+False # 假
 ```
 
 ### 3.5. 空对象
