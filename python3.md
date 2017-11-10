@@ -136,7 +136,7 @@ for n in [1,2,3]:
 
 ## 6. 函数使用
 
-### 6.1. 打印文本
+### 6.1. print 函数
 
 ```python
 print('Hello world')
@@ -148,4 +148,14 @@ Usage: thingy [OPTIONS]
      -H hostname               Hostname to connect to
 ''') # 按格式打印
 ```
+
+### 6.2. range 函数
+
+```python
+range(5) # == 0,1,2,3,4 （左包含到右不包含）
+range(2,5) # == 2,3,4 （左包含到右不包含）
+range(0,5,2) # 第3个值表示增量，不指定则默认为1
+```
+
+
 
