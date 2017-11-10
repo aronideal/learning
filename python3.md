@@ -46,7 +46,7 @@ name  =  '李四'
 'Hello {info[name]}, I\'m {info[location]}'.format(info={'name':'Mr.Li', 'location':'here'})
 ```
 
-#### 3.2.2. 使用'\'转义字符
+#### 3.2.2. 使用'\\'转义字符
 
 ```python
 'I\'m here.'
@@ -54,7 +54,7 @@ name  =  '李四'
 'space\ninput'
 ```
 
-使用'r'前缀，'\'转义字符被当做普通字符处理
+使用'r'前缀，'\\'转义字符被当做普通字符处理
 
 ```python
 r'C:\some\name' # win32系统中路径使用r的情况比较多
