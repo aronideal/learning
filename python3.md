@@ -74,6 +74,7 @@ len('Hello world')
 word = 'Hello world'
 word[0]
 word[1]
+word[0:3] # 字符区间获取（左包含，右不包含）
 ...
 ```
 
