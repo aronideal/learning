@@ -126,9 +126,16 @@ else:
     print('22 < 11')
 ```
 
-## 5. 函数使用
+# 5. for 语句
 
-### 5.1. 打印文本
+```python
+for n in [1,2,3]:
+    print(n)
+```
+
+## 6. 函数使用
+
+### 6.1. 打印文本
 
 ```python
 print('Hello world')
