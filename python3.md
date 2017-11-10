@@ -155,10 +155,12 @@ else:
     print('22 < 11')
 ```
 
-in 关键字：
+使用in关键字：
 
+```python
 if ok in ('y', 'ye', 'yes'):
     print(ok)
+```
 
 ## 5. 循环
 
