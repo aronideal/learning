@@ -215,5 +215,20 @@ range(2,5) # == 2,3,4 （左包含到右不包含）
 range(0,5,2) # 第3个值表示增量，不指定则默认为1
 ```
 
+### 8.3. type 函数
+
+检查数据类型：
+
+```python
+type(2)
+type(None)
+type(print)
+```
+
+返回
+
+    <class 'int'>
+    <class 'NoneType'>
+    <class 'builtin_function_or_method'>
 
 
