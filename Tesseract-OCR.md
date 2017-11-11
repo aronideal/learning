@@ -1,11 +1,13 @@
 
 ## 1. 使用Tesseract识别图片上的文字
 
-格式：tesseract --tessdata-dir [traineddata文件的所在目录] -l [语言文件名] [源图片文件路径] [输出路径]
+格式：
+
+tesseract --tessdata-dir [traineddata文件的所在目录] -l [语言文件名] [源图片文件路径] [输出路径]
 
     tesseract --tessdata-dir D:\tesseract\tessdata-dir -l chi_sim "C:\Users\Administrator\Desktop\source.jpg" D:\tesseract-out
 
-命令使用帮助
+命令使用帮助：
 
 ```
 Usage:
