@@ -87,7 +87,9 @@ Single options:
 
     tesseract [lang].[fontname].exp[num].tif [lang].[fontname].exp[num] batch.nochop makebox
 
-box文件必需与图片资源文件前缀一致
+box文件必需与图片资源文件前缀一致，如：
+
+    zh_CN.arial.exp0.box
 
 #### 2.1.4. 修正识别的字符
 
