@@ -5,7 +5,12 @@
 
 tesseract --tessdata-dir [traineddata文件的所在目录] -l [语言文件名] [源图片文件路径] [输出路径]
 
-    tesseract --tessdata-dir D:\tesseract\tessdata-dir -l chi_sim "C:\Users\Administrator\Desktop\source.jpg" D:\tesseract-out
+    tesseract --tessdata-dir [tessdata-dir-path] -l [lang] [image-path] [output-path]
+    tesseract --tessdata-dir [tessdata-dir-path] -l [lang]+[lang] [image-path] [output-path]
+
+如：
+
+    tesseract --tessdata-dir D:\tesseract\tessdata -l eng D:\tesseract\1.jpg D:\tesseract\output
 
 命令使用帮助：
 
