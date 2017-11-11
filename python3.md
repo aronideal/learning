@@ -1,6 +1,15 @@
 
 [官网学习指南](https://docs.python.org/3/tutorial/)    [Python下载](https://www.python.org/downloads/)    [PyCharm开发环境下载](https://www.jetbrains.com/pycharm/download/)
 
+如果报出：
+
+无法启动此程序，因为计算机中丢失 api-ms-win-crt-runtime-l1-1-0.dll。尝试重新安装该程序以解决此问题。 
+
+下载安装VS支持库以解决：
+
+https://www.microsoft.com/zh-cn/download/details.aspx?id=48145
+
+
 ## 1. python3 文件规范
 
 ### 1.1. 指定设备环境
