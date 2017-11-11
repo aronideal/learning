@@ -58,7 +58,7 @@ Single options:
   --print-parameters    Print tesseract parameters.
 ```
 
-## 2. 语言文件训练
+## 2. 训练语言文件
 
 [jTessBoxEditor下载](https://sourceforge.net/projects/vietocr/files/jTessBoxEditor/)
 
