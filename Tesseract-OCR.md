@@ -40,3 +40,10 @@ box文件必需与图片文件一致
 
 点击Box Coordinates，识别错误的字符在Char处修正。
 
+#### 2.1.5. 生成traineddata文件
+
+    combine_tessdata num.
+
+直接紧跟num.即[lang].
+
+
