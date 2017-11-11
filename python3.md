@@ -3,11 +3,11 @@
 
 如果报出：
 
-无法启动此程序，因为计算机中丢失 api-ms-win-crt-runtime-l1-1-0.dll。尝试重新安装该程序以解决此问题。 
+    无法启动此程序，因为计算机中丢失 api-ms-win-crt-runtime-l1-1-0.dll。尝试重新安装该程序以解决此问题。 
 
 下载安装Windows支持库，最后重启电脑以解决：
 
-https://www.microsoft.com/zh-CN/download/details.aspx?id=53840
+    https://www.microsoft.com/zh-CN/download/details.aspx?id=53840
 
 
 ## 1. python3 文件规范
