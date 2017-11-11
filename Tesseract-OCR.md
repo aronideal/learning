@@ -77,19 +77,19 @@ num.font_properties
 
 #### 2.1.2. 准备图片资源
 
-图片里包含被训练的字符，只包含字符，每个字符以空格分隔，如下图：
+图片里描述将被训练的字符，每个字符之间以空格分隔，如下图：
 
     1 2 3 4 5 6 7 8 9 0 A B C D
 
-图片名字按照文件命名规则命名：
+图片文件命名成[lang].[fontname].exp[num]结构，如：
 
-    num.arial.exp0
+    zh_CN.arial.exp0
 
 #### 2.1.3. 生成box文件
 
     tesseract [lang].[fontname].exp[num].tif [lang].[fontname].exp[num] batch.nochop makebox
 
-box文件必需与图片文件一致
+box文件必需与图片资源文件一致
 
 #### 2.1.4. 修正识别的字符
 
