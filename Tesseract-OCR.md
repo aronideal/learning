@@ -69,16 +69,9 @@ Single options:
 
 ### 2.1. 训练步骤
 
-#### 2.1.1. 文件结构
+#### 2.1.1. 注意事项
 
-文件命名规则： [lang].[fontname].exp[num]
-
-num.arial.exp0.tif
-num.arial.exp0.box
-
-num.font_properties
-
-所有相关的文件放到同一个目录下
+用于训练的相关文件必须放到同一个目录下
 
 #### 2.1.2. 准备图片资源
 
@@ -86,15 +79,15 @@ num.font_properties
 
     1 2 3 4 5 6 7 8 9 0 A B C D
 
-图片文件命名成[lang].[fontname].exp[num]结构，如：
+图片文件命名成固定前缀，[lang].[fontname].exp[num]，如：
 
-    zh_CN.arial.exp0
+    zh_CN.arial.exp0.tif
 
 #### 2.1.3. 生成box文件
 
     tesseract [lang].[fontname].exp[num].tif [lang].[fontname].exp[num] batch.nochop makebox
 
-box文件必需与图片资源文件一致
+box文件必需与图片资源文件前缀一致
 
 #### 2.1.4. 修正识别的字符
 
@@ -119,12 +112,6 @@ box文件必需与图片资源文件一致
     combine_tessdata [lang].
 
 只写[lang].即可
-
-
-
-
-
-
 
 
 
