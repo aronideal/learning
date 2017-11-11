@@ -114,6 +114,7 @@ box文件必需与图片资源文件前缀一致，如：
 #### 2.1.8. 聚集字符特征（inttemp、pffmtable、normproto）
 
     mftraining -U unicharset -O [lang].unicharset [lang].[fontname].exp[num].tr
+    cntraining [lang].[fontname].exp[num].tr
 
 #### 2.1.9. 生成traineddata文件
 
