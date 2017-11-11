@@ -105,6 +105,7 @@ box文件必需与图片资源文件前缀一致，如：
 
 新建一个font_properties文件，填写如下内容：
 
+    <fontname> <italic> <bold> <fixed> <serif> <fraktur>
     [fontname] 0 0 0 0 0
 
 #### 2.1.7. 计算unicharset字符集文件
