@@ -101,15 +101,21 @@ box文件必需与图片资源文件前缀一致，如：
 
     tesseract [lang].[fontname].exp[num].tif [lang].[fontname].exp[num] nobatch box.train
 
-#### 2.1.6. 计算unicharset字符集文件
+#### 2.1.6. 编写字体文件
+
+新建一个font_properties文件，填写如下内容：
+
+    [fontname] 0 0 0 0 0
+
+#### 2.1.7. 计算unicharset字符集文件
 
     unicharset_extractor [lang].[fontname].exp[num].box
 
-#### 2.1.7. 聚集字符特征（inttemp、pffmtable、normproto）
+#### 2.1.8. 聚集字符特征（inttemp、pffmtable、normproto）
 
     mftraining -U unicharset -O [lang].unicharset [lang].[fontname].exp[num].tr
 
-#### 2.1.8. 生成traineddata文件
+#### 2.1.9. 生成traineddata文件
 
     combine_tessdata [lang].
 
