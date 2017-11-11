@@ -97,10 +97,29 @@ box文件必需与图片文件一致
 
 点击Box Coordinates，识别错误的字符在Char处修正。
 
-#### 2.1.5. 生成traineddata文件
+#### 2.1.5. 生成tr字符特征文件
+
+    tesseract num.arial.exp0.tif num.arial.exp0 nobatch box.train
+
+#### 2.1.6. 计算unicharset字符集文件
+
+    unicharset_extractor lang.fontname.number_1.box
+
+#### 2.1.7. 聚集字符特征（inttemp、pffmtable、normproto）
+
+    mftraining -U unicharset -O lang.unicharset lang.fontname.number_1.tr
+
+#### 2.1.8. 生成traineddata文件
 
     combine_tessdata num.
 
 直接紧跟num.即[lang].
+
+
+
+
+
+
+
 
 
