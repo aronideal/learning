@@ -112,19 +112,23 @@ box文件必需与图片资源文件前缀一致，如：
 
     unicharset_extractor [lang].[fontname].exp[num].box
 
-#### 2.1.8. 聚集字符特征（inttemp、pffmtable、normproto）
+#### 2.1.8. 生成shape
+
+    shapeclustering -F font_properties -U unicharset %RES_PREFIX%.tr
+
+#### 2.1.9. 聚集字符特征（inttemp、pffmtable、normproto）
 
     mftraining -U unicharset -O [lang].unicharset [lang].[fontname].exp[num].tr
     cntraining [lang].[fontname].exp[num].tr
 
-#### 2.1.9. 生成traineddata文件
+#### 2.1.10. 生成traineddata文件
 
     combine_tessdata [lang].
 
 只写[lang].即可
 
 
-# 附：快速命令执行(bat)
+## 附：快速命令执行(bat)
 
 set LANG_NAME=zh_CN
 set FONT_NAME=arial
@@ -138,6 +142,8 @@ tesseract %RES_PREFIX%.tif %RES_PREFIX% nobatch box.train
 创建font_properties，写入%FONT_NAME% 0 0 0 0 0
 
 unicharset_extractor %RES_PREFIX%.box
+
+shapeclustering -F font_properties -U unicharset %RES_PREFIX%.tr
 
 mftraining --test_ch UTF8 -U unicharset -O %LANG_NAME%.unicharset %RES_PREFIX%.tr
 
@@ -154,5 +160,4 @@ combine_tessdata %LANG_NAME%.
 tesseract -l %LANG_NAME% %RES_PREFIX%.tif D:\tesseract\output2
 
 
-shapeclustering -F font_properties -U unicharset %RES_PREFIX%.tr
 
