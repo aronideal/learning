@@ -79,7 +79,7 @@ Single options:
 
     1 2 3 4 5 6 7 8 9 0 A B C D
 
-图片文件命名成固定前缀，[lang].[fontname].exp[num]，其中lang为语言名称、fontname为字体名称、num为序号，如：
+图片文件命名成固定前缀。[lang].[fontname].exp[num]，其中lang为语言名称、fontname为字体名称、num为序号，如：
 
     zh_sim.arial.exp0.tif
 
