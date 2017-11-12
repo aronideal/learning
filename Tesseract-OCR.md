@@ -124,4 +124,35 @@ box文件必需与图片资源文件前缀一致，如：
 只写[lang].即可
 
 
+# 附：快速命令执行(bat)
+
+set LANG_NAME=zh_CN
+set FONT_NAME=arial
+set RES_PREFIX=%LANG_NAME%.%FONT_NAME%.exp0
+set TESSDATA_PREFIX=%TesseractOCR_HOME%
+
+tesseract %RES_PREFIX%.tif %RES_PREFIX% batch.nochop makebox
+
+tesseract %RES_PREFIX%.tif %RES_PREFIX% nobatch box.train
+
+创建font_properties，写入%FONT_NAME% 0 0 0 0 0
+
+unicharset_extractor %RES_PREFIX%.box
+
+mftraining --test_ch UTF8 -U unicharset -O %LANG_NAME%.unicharset %RES_PREFIX%.tr
+
+cntraining --test_ch UTF8 -U unicharset -O %LANG_NAME%.unicharset %RES_PREFIX%.tr
+
+copy inttemp %LANG_NAME%.inttemp
+copy normproto %LANG_NAME%.normproto
+copy pffmtable %LANG_NAME%.pffmtable
+copy shapetable %LANG_NAME%.shapetable
+
+combine_tessdata %LANG_NAME%.
+
+
+tesseract -l %LANG_NAME% %RES_PREFIX%.tif D:\tesseract\output2
+
+
+shapeclustering -F font_properties -U unicharset %RES_PREFIX%.tr
 
