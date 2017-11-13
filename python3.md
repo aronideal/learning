@@ -283,12 +283,13 @@ int('1') # 转换str类型为int类型
 
 ```python
 list(range(5)) # 转换range类型为list类型
+list(tuple('123456')) # 将list类型转换为tuple类型
 ```
 
 ### 8.5. tuple 函数
 
 ```python
-tuple(list("123456")) # 将list类型转换为tuple类型
+tuple(list('123456')) # 将list类型转换为tuple类型
 ```
 
 ### 8.6. range 函数
