@@ -243,8 +243,8 @@ ret = func('v1')
 ### 7.4. 使用lambda关键字构建匿名函数
 
 ```python
-def func(a):
-    return lambda b: b + a # 返回的是lambda定义，是function类型
+def func(b):
+    return lambda a: a + b # 返回的是lambda定义，是function类型。多个参数，则声明成lambda a,b,c:
 
 lambdaFunc = func(66)
 ret = lambdaFunc(77) # ret的值是66+77=132
