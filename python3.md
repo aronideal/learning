@@ -220,11 +220,11 @@ def func():
 func()
 ```
 
-### 7.2. 有参
+### 7.2. 有参和默认值
 
 ```python
 def func(arg1, arg2=3): # b有默认值，可不传
-    print('This is a function')
+    print('This is a function', arg1, arg2)
 
 func('v1')
 func('v1', 'v2')
@@ -234,7 +234,7 @@ func('v1', 'v2')
 
 ```python
 def func(arg1):
-    print('This is a function')
+    print('This is a function', arg1)
     return True
 
 ret = func('v1')
@@ -246,8 +246,8 @@ ret = func('v1')
 def func(a):
     return lambda b: b + a # 返回的是lambda定义，是function类型
 
-lambdafun = func(66)
-ret = lambdafun(77) # ret的值=66+77=132
+lambdaFunc = func(66)
+ret = lambdaFunc(77) # ret的值是66+77=132
 ```
 
 ## 8. 系统函数
