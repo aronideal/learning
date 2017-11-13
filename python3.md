@@ -211,32 +211,43 @@ pass # 当成一个普通语句执行，但不会产生任何效果。需要一�
 
 ## 7. 自定义函数
 
-### 7.1. 定义函数
+### 7.1. 无参
 
 ```python
 def func():
     print('This is a function')
+
+func()
 ```
 
-有参：
+### 7.2. 有参
 
 ```python
-def func(a, b=3): # b有默认值，可不传
+def func(arg1, arg2=3): # b有默认值，可不传
     print('This is a function')
+
+func('v1')
+func('v1', 'v2')
 ```
 
-有返回结果：
+### 7.3. 有返回值
 
 ```python
-def func(arg):
+def func(arg1):
     print('This is a function')
     return True
+
+ret = func('v1')
 ```
 
-### 7.2. 调用函数
+### 7.4. 使用lambda关键字构建匿名函数
 
 ```python
-func()
+def func(a):
+    return lambda b: b + a # 返回的是lambda定义，是function类型
+
+lambdafun = func(66)
+ret = lambdafun(77) # ret的值=66+77=132
 ```
 
 ## 8. 系统函数
