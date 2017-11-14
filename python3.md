@@ -192,6 +192,15 @@ for n in [1,2,3]:
 
 ### 5.2. while 语句
 
+```python
+n = 0
+while True:
+    if n >= 3:
+        break
+    print(n)
+    n=n+1
+```
+
 ### 5.3. 循环控制
 
 ```python
