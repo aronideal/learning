@@ -237,6 +237,8 @@ def func(arg1, arg2=3): # b有默认值，可不传
 
 func('v1')
 func('v1', 'v2')
+# 如果函数定义了1个以上有默认值的参数，调用的时候需写明参数名
+multi_param_func('he', arg2='ll', arg3='o')
 ```
 
 ### 7.3. 有返回值
