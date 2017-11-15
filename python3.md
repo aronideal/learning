@@ -419,11 +419,15 @@ type(print)
 from collections import deque
 
 deq = deque([1,2,3,4,5,6])
-deq.append(7)
-deq.append(8)
 
-deq.popleft() # 返回头部取出，并影响队列数据。空队列执行后报错
-deq.popleft() # 返回头部取出，并影响队列数据。空队列执行后报错
+deq.append(7) # 追加到队尾，返回None。影响队列
+deq.appendleft(8) # 追加到队头，返回None。影响队列
+
+deq.pop() # 返回尾部数据，并影响队列数据。空队列执行后报错
+deq.popleft() # 返回头部数据，并影响队列数据。空队列执行后报错
+
+# 其它用法同list
+...
 
 print(deq)
 ```
