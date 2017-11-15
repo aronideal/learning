@@ -185,6 +185,40 @@ print('hello world') # 这里将报错，print已不再是函数
 
 ## 4. 逻辑运算
 
+### 4.1. and
+
+逻辑与。当左右表达式全部为True，返回True。否则，False
+
+```python
+True and True -> True
+True and False -> False
+False and True -> False
+False and False -> False
+1 < 2 and 1 == 1 -> True
+```
+
+### 4.2. or
+
+逻辑或。当左右表达式全部为False，返回False。否则，True
+
+```python
+True and True -> True
+True and False -> True
+False and True -> True
+False and False -> False
+1 > 2 and 1 == 0 -> False
+```
+
+### 4.3. not
+
+逻辑非。当右表达式为False，返回True。否则，False
+
+```python
+not True -> False
+not False -> True
+not 1 == 0 -> True
+```
+
 ## 5. if 语句
 
 ```python
