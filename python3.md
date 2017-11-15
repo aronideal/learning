@@ -243,6 +243,10 @@ not True -> False
 not False -> True
 ```
 
+### 4.6. 运算符优先级
+
+![运算符优先级](/python3-运算符优先级.png)
+
 ## 5. if 语句
 
 ```python
