@@ -243,8 +243,9 @@ multi_param_func('he', arg2='ll', arg3='o')
 
 ### 7.3. * 和 ** 参数
 
-* 是 <class 'tuple'>
-** 是 <class 'dict'>
+\* 是 <class 'tuple'>
+
+\*\* 是 <class 'dict'>
 
 ```python
 def func(*values): # * 只能存在一次
