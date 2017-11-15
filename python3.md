@@ -241,14 +241,26 @@ func('v1', 'v2')
 multi_param_func('he', arg2='ll', arg3='o')
 ```
 
-### 7.3. dict形参
+### 7.3. * 和 ** 参数
 
 ```python
-def func(**keys):
-    for key in keys:
-        print(key, '=', keys[key])
+def func(*values): # * 只能存在一次
+    for value in values:
+        print(value)
 
-func(a='1', b='2', c='3')
+def func1(**keypairs): # ** 只能存在一次
+    for key in keypairs:
+        print(key, '=', keypairs[key])
+
+def func2(*values, **keypairs): # * 和 ** 同时存在时，* 必须放在 ** 前。* 和 ** 只能存在一次
+    for value in values:
+        print(value)
+    for key in keypairs:
+        print(key, '=', keypairs[key])
+
+func('1', '2', '3') # 不能指定参数名
+func1(a='1', b='2', c='3') # 必须指定参数名
+func2('1', '2', '3', a='1', b='2', c='3') # 必须指定参数名
 ```
 
 ### 7.4. 有返回值
