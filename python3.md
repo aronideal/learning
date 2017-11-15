@@ -131,6 +131,7 @@ list.clear() # 清理list所有的数据。返回None
 list.reverse() # 反转list数据。影响list。返回None
 list.count(4) # 在list查找指定值的出现个数。返回个数
 list.index('3') 或 list.index('3', 2) 或 list.index('3', 2, 4) # 第一个参数是被搜索索引位的数据，第二个是begin包含，第三个是end不包含。返回所在索引，找不到报错
+list.copy() # 返回一个新地址的list，得到的list做任何操作都不会影响本身的list
 ```
 
 #### 3.3.1. 列表排序
