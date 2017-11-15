@@ -183,9 +183,20 @@ print = 'Print by This'
 print('hello world') # 这里将报错，print已不再是函数
 ```
 
-## 4. 运算
+## 4. 运算符
 
-### 4.1. 比较运算符 <、<=、>、>=、==、!=
+### 4.1. 算数运算符 +、-、*、/、%、**
+
+```python
+2 + 3
+2 - 3
+2 * 3
+2 / 3 # 无论参与运算的数据是否整型，全部执行浮点数除法
+2 % 3 # 取余运算
+2**3 # 幂（乘方）运算。2的3次方
+```
+
+### 4.2. 比较运算符 <、<=、>、>=、==、!=
 
 ```python
 2 < 3
@@ -196,7 +207,7 @@ print('hello world') # 这里将报错，print已不再是函数
 2 != 3
 ```
 
-### 4.2. 逻辑运算符 and
+### 4.3. 逻辑运算符 and
 
 逻辑与。当左右表达式全部为True，返回True。否则，False
 
@@ -207,7 +218,7 @@ False and True -> False
 False and False -> False
 ```
 
-### 4.3. 逻辑运算符 or
+### 4.4. 逻辑运算符 or
 
 逻辑或。当左右表达式全部为False，返回False。否则，True
 
@@ -218,7 +229,7 @@ False or True -> True
 False or False -> False
 ```
 
-### 4.4. 逻辑运算符 not
+### 4.5. 逻辑运算符 not
 
 逻辑非。当右表达式为False，返回True。否则，False
 
