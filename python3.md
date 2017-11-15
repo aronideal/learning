@@ -93,13 +93,7 @@ name  =  '李四'
 r'C:\some\name' # win32系统中路径使用r的情况比较多
 ```
 
-#### 3.2.3. 计算字符串长度
-
-```python
-len('Hello world')
-```
-
-#### 3.2.4. 读取字符
+#### 3.2.3. 读取字符
 
 ```python
 str = 'Hello world'
@@ -111,7 +105,7 @@ str[:] # 字符区间获取（左开头到右结尾）
 ...
 ```
 
-#### 3.2.5. join 连接序列成字符串
+#### 3.2.4. join 连接序列成字符串
 
 ```python
 '-'.join(list('123'))
@@ -376,6 +370,13 @@ int('1') # 转换str类型为int类型
 ```python
 list(range(5)) # 转换range类型为list类型
 list(tuple('123456')) # 将list类型转换为tuple类型
+```
+
+### 8.5. 计算数据长度
+
+```python
+len('Hello world') # 字符串
+len([1,2,3,4]) # list
 ```
 
 ### 8.5. tuple 函数
