@@ -212,6 +212,8 @@ print('hello world') # 这里将报错，print已不再是函数
 
 逻辑与。当左右表达式全部为True，返回True。否则，False
 
+注意：逻辑运算符and支持短路计算，即左边为False，直接返回False，不再去计算右边表达式
+
 ```python
 True and True -> True
 True and False -> False
@@ -222,6 +224,8 @@ False and False -> False
 ### 4.4. 逻辑运算符 or
 
 逻辑或。当左右表达式全部为False，返回False。否则，True
+
+注意：逻辑运算符or支持短路计算，即左边为True，直接返回True，不再去计算右边表达式
 
 ```python
 True or True -> True
