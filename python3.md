@@ -422,8 +422,8 @@ deq = deque([1,2,3,4,5,6])
 deq.append(7)
 deq.append(8)
 
-deq.popleft() # 从头部取出，并影响队列数据
-deq.popleft() # 从头部取出，并影响队列数据
+deq.popleft() # 返回头部取出，并影响队列数据。空队列执行后报错
+deq.popleft() # 返回头部取出，并影响队列数据。空队列执行后报错
 
 print(deq)
 ```
