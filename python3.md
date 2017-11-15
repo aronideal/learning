@@ -372,20 +372,20 @@ list(range(5)) # 转换range类型为list类型
 list(tuple('123456')) # 将list类型转换为tuple类型
 ```
 
-### 8.5. 计算数据长度
+### 8.5. len 函数
 
 ```python
 len('Hello world') # 字符串
 len([1,2,3,4]) # list
 ```
 
-### 8.5. tuple 函数
+### 8.6. tuple 函数
 
 ```python
 tuple(list('123456')) # 将list类型转换为tuple类型
 ```
 
-### 8.6. range 函数
+### 8.7. range 函数
 
 ```python
 range(5) # == 0,1,2,3,4 （左包含到右不包含）
@@ -393,7 +393,7 @@ range(2,5) # == 2,3,4 （左包含到右不包含）
 range(0,5,2) # 第3个值表示增量，不指定则默认为1
 ```
 
-### 8.7. type 函数
+### 8.8. type 函数
 
 检查数据类型：
 
