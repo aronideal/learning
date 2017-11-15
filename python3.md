@@ -248,10 +248,6 @@ pass # 当成一个普通语句执行，但不会产生任何效果。需要一�
 
 ## 7. 自定义函数
 
-函数内第一行最好写'''注释说明函数调用方法和功能，好处是可通过__doc__获得函数的介绍，更轻松的调用函数功能。如下：
-
-    ```L.extend(iterable) -> None -- extend list by appending elements from the iterable```
-
 ### 7.1. 无参
 
 ```python
@@ -320,7 +316,19 @@ def func(arg0, arg1 : '参数1', arg2 : '参数2，默认值：2' = 2) -> '返�
 func(2, 3, 4) # 正常调用得到函数功能。如需打印 Function Annotations 可通过 func.__annotations__ 得到
 ```
 
-### 7.5. 使用lambda关键字构建匿名函数
+### 7.6. 增加doc注释
+
+函数内第一行写'''注释，说明函数调用方法和功能。好处是可通过__doc__获得函数的介绍，更轻松的调用函数功能。如下：
+
+```python
+def func(arg0):
+    '''func(arg0) -> None -- 空函数，举例说明这行注释的意义'''
+    pass
+
+print(func.__doc__)
+```
+
+### 7.7. 使用lambda关键字构建匿名函数
 
 ```python
 def func(b):
