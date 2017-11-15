@@ -183,7 +183,9 @@ print = 'Print by This'
 print('hello world') # 这里将报错，print已不再是函数
 ```
 
-## 4. if 语句
+## 4. 逻辑运算
+
+## 5. if 语句
 
 ```python
 if 22 > 11:
@@ -210,16 +212,16 @@ if [2] == [2]: # ==是值的比对，成立
     pass
 ```
 
-## 5. 循环
+## 6. 循环
 
-### 5.1. for 语句
+### 6.1. for 语句
 
 ```python
 for n in [1,2,3]:
     print(n)
 ```
 
-### 5.2. while 语句
+### 6.2. while 语句
 
 ```python
 n = 0
@@ -230,7 +232,7 @@ while True:
     n=n+1
 ```
 
-### 5.3. 循环控制
+### 6.3. 循环控制
 
 ```python
 break # 结束所在的循环体
@@ -239,17 +241,17 @@ else:
     print('else 内容块') # 循环条件不满足被触发（break之后不会触发）
 ```
 
-## 6. 其它用法
+## 7. 其它用法
 
-### 6.1. pass 语句
+### 7.1. pass 语句
 
 ```python
 pass # 当成一个普通语句执行，但不会产生任何效果。需要一个空实现的时候使用
 ```
 
-## 7. 自定义函数
+## 8. 自定义函数
 
-### 7.1. 无参
+### 8.1. 无参
 
 ```python
 def func():
@@ -258,7 +260,7 @@ def func():
 func()
 ```
 
-### 7.2. 有参和默认值
+### 8.2. 有参和默认值
 
 ```python
 def func(arg1, arg2=3): # b有默认值，可不传
@@ -270,7 +272,7 @@ func('v1', 'v2')
 multi_param_func('he', arg2='ll', arg3='o')
 ```
 
-### 7.3. * 和 ** 参数
+### 8.3. * 和 ** 参数
 
 \* 是 <class 'tuple'>
 
@@ -296,7 +298,7 @@ func1(a='1', b='2', c='3') # 必须指定参数名
 func2('1', '2', '3', a='1', b='2', c='3') # 必须指定参数名
 ```
 
-### 7.4. 有返回值
+### 8.4. 有返回值
 
 ```python
 def func(arg1):
@@ -306,7 +308,7 @@ def func(arg1):
 ret = func('v1')
 ```
 
-### 7.5. 增加函数注解 (Function Annotations）
+### 8.5. 增加函数注解 (Function Annotations）
 
 函数注解给使用者提供函数说明
 
@@ -317,7 +319,7 @@ def func(arg0, arg1 : '参数1', arg2 : '参数2，默认值：2' = 2) -> '返�
 func(2, 3, 4) # 正常调用得到函数功能。如需打印 Function Annotations 可通过 func.__annotations__ 得到
 ```
 
-### 7.6. 增加doc注释
+### 8.6. 增加doc注释
 
 函数内第一行写'''注释，说明函数调用方法和功能。好处是可通过__doc__获得函数的介绍，更轻松的调用函数功能。如下：
 
@@ -329,7 +331,7 @@ def func(arg0):
 print(func.__doc__)
 ```
 
-### 7.7. 使用lambda关键字构建匿名函数
+### 8.7. 使用lambda关键字构建匿名函数
 
 ```python
 def func(b):
@@ -339,9 +341,9 @@ lambdaFunc = func(66)
 ret = lambdaFunc(77) # ret的值是66+77=132
 ```
 
-## 8. 系统函数
+## 9. 系统函数
 
-### 8.1. print 函数
+### 9.1. print 函数
 
 ```python
 print('Hello world')
@@ -355,7 +357,7 @@ Usage: thingy [OPTIONS]
 print(func.__doc__) # func是一个函数名，结果将打印'''里的注释内容
 ```
 
-### 8.2. input 函数
+### 9.2. input 函数
 
 接收一个客户端输入，参数prompt是提示文本，返回字符串
 
@@ -363,33 +365,33 @@ print(func.__doc__) # func是一个函数名，结果将打印'''里的注释内
 input('Hello')
 ```
 
-### 8.3. int 函数
+### 9.3. int 函数
 
 ```python
 int('1') # 转换str类型为int类型
 ```
 
-### 8.4. list 函数
+### 9.4. list 函数
 
 ```python
 list(range(5)) # 转换range类型为list类型
 list(tuple('123456')) # 将list类型转换为tuple类型
 ```
 
-### 8.5. len 函数
+### 9.5. len 函数
 
 ```python
 len('Hello world') # 字符串
 len([1,2,3,4]) # list
 ```
 
-### 8.6. tuple 函数
+### 9.6. tuple 函数
 
 ```python
 tuple(list('123456')) # 将list类型转换为tuple类型
 ```
 
-### 8.7. range 函数
+### 9.7. range 函数
 
 ```python
 range(5) # == 0,1,2,3,4 （左包含到右不包含）
@@ -397,7 +399,7 @@ range(2,5) # == 2,3,4 （左包含到右不包含）
 range(0,5,2) # 第3个值表示增量，不指定则默认为1
 ```
 
-### 8.8. type 函数
+### 9.8. type 函数
 
 检查数据类型：
 
@@ -413,7 +415,7 @@ type(print)
     <class 'NoneType'>
     <class 'builtin_function_or_method'>
 
-## 9. 队列操作
+## 10. 队列操作
 
 ```python
 from collections import deque
