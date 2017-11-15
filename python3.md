@@ -413,4 +413,19 @@ type(print)
     <class 'NoneType'>
     <class 'builtin_function_or_method'>
 
+## 9. 队列操作
+
+```python
+from collections import deque
+
+deq = deque([1,2,3,4,5,6])
+deq.append(7)
+deq.append(8)
+
+deq.popleft() # 从头部取出，并影响队列数据
+deq.popleft() # 从头部取出，并影响队列数据
+
+print(deq)
+```
+
 
