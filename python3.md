@@ -307,6 +307,7 @@ Usage: thingy [OPTIONS]
      -h                        Display this usage message
      -H hostname               Hostname to connect to
 ''') # 按格式打印
+print(func.__doc__) # func是一个函数名，结果将打印'''里的注释内容
 ```
 
 ### 8.2. input 函数
