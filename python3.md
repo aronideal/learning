@@ -128,6 +128,8 @@ list.extend([28, 33, 66]) # 扩展列表内容。返回None，影响list的值
 list.remove('6') # 删除列表第一个相同的内容。返回None，影响list值。不存在则报错
 list.pop(index) # 取出并删除list对应索引的数据，不传则从取删最后一个索引位的数据。返回对应的数据。不存在则报错
 list.clear() # 清理list所有的数据。返回None
+list.reverse() # 反转list数据。影响list。返回None
+list.count(4) # 在list查找指定值的出现个数。返回个数
 ```
 
 #### 3.3.1. 列表排序
