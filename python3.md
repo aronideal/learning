@@ -190,7 +190,7 @@ print('hello world') # 这里将报错，print已不再是函数
 逻辑与。当左右表达式全部为True，返回True。否则，False
 
 ```python
-True and True -\> True
+True and True -&gt; True
 True and False -\> False
 False and True -\> False
 False and False -\> False
