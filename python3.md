@@ -132,6 +132,26 @@ list.append(33) # 追加列表
 list.insert(2, 66) # 在索引位置前插入值
 ```
 
+#### 3.3.1. 列表排序
+
+key 列表排序的规则
+
+reverse 逆序列表的值
+
+```python
+list = [1, 4, 9, 16, 25]
+list.sort(key=lambda item: item)
+list.sort(key=lambda item: item, reverse=True)
+```
+
+复杂列表的排序
+
+```python
+list = [['a', 2], ['b', 3], ['c', 1]]
+list.sort(key=lambda item: item[0])
+list.sort(key=lambda item: item[1])
+```
+
 ### 3.4. 布尔值
 
 ```python
