@@ -284,6 +284,17 @@ def func(arg1):
 ret = func('v1')
 ```
 
+### 7.5. 增加函数注解 (Function Annotations）
+
+函数注解给使用者提供函数说明
+
+```python
+def func(arg0, arg1 : '参数1', arg2 : '参数2，默认值：2' = 2) -> '返回值：None':
+    pass
+
+func(2, 3, 4) # 正常调用得到函数功能。如需打印 Function Annotations 可通过 func.__annotations__ 得到
+```
+
 ### 7.5. 使用lambda关键字构建匿名函数
 
 ```python
