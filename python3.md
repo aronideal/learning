@@ -241,7 +241,17 @@ func('v1', 'v2')
 multi_param_func('he', arg2='ll', arg3='o')
 ```
 
-### 7.3. 有返回值
+### 7.3. dict形参
+
+```python
+def func(**keys):
+    for key in keys:
+        print(key, '=', keys[key])
+
+func(a='1', b='2', c='3')
+```
+
+### 7.4. 有返回值
 
 ```python
 def func(arg1):
@@ -251,7 +261,7 @@ def func(arg1):
 ret = func('v1')
 ```
 
-### 7.4. 使用lambda关键字构建匿名函数
+### 7.5. 使用lambda关键字构建匿名函数
 
 ```python
 def func(b):
