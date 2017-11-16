@@ -190,6 +190,14 @@ print = 'Print by This'
 print('hello world') # 这里将报错，print已不再是函数
 ```
 
+### 3.8. π
+
+```python
+from math import pi # 需引入math里的pi
+
+print(pi)
+```
+
 ## 4. 运算符
 
 ### 4.1. 算数运算符 +、-、*、/、//、%、**
