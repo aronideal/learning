@@ -419,11 +419,15 @@ func(2, 3, 4) # 正常调用得到函数功能。如需打印 Function Annotatio
 函数内第一行写'''注释，说明函数调用方法和功能。好处是可通过__doc__获得函数的介绍，更轻松的调用函数功能。如下：
 
 ```python
-def func(arg0):
-    '''
-    func(arg0) -> None
-    
-    Return None, arg0 is a parameter.
+def func(arg0, arg1=3):
+    '''
+    func(arg0, arg1=3) -> None
+
+    Return None. This function is test.
+    Required arguments:
+    arg0:   This is arg0.
+    Optional arguments:
+    arg1:   This is arg1.
     '''
     pass
 
