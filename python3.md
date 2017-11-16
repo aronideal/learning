@@ -279,7 +279,7 @@ if [2] == [2]: # ==是值的比对，成立
 ```python
 ret = x if x < y else y # 如果 x < y 为 True，则 ret 为 x。反之，ret 为 y。类似于三目运算
 
-ret = [y,x][x < y] # 如果 x < y 为 True，则 ret 为 x。反之，ret 为 y。类似于三目运算
+ret = [y, x][x < y] # 如果 x < y 为 True，则 ret 为 x。反之，ret 为 y。类似于三目运算
 ```
 
 ## 6. 循环
