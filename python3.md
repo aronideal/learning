@@ -424,6 +424,7 @@ def func(arg0, arg1=3):
     func(arg0, arg1=3) -> None
 
     Return None. This function is test.
+
     Required arguments:
     arg0:   This is arg0.
     Optional arguments:
