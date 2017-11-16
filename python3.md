@@ -420,7 +420,11 @@ func(2, 3, 4) # 正常调用得到函数功能。如需打印 Function Annotatio
 
 ```python
 def func(arg0):
-    '''func(arg0) -> None -- 空函数，举例说明这行注释的意义'''
+    '''
+    func(arg0) -> None
+    
+    Return None, arg0 is a parameter.
+    '''
     pass
 
 print(func.__doc__)
