@@ -447,22 +447,29 @@ int('1') # 转换str类型为int类型
 ```python
 list(range(5)) # 转换range类型为list类型
 list(tuple('123456')) # 将list类型转换为tuple类型
+list(map(lambda x: x, '123456'))
 ```
 
-### 9.5. len 函数
+### 9.5. map 函数
+
+```python
+map(lambda x: x, range(10))) # <class 'map'>
+```
+
+### 9.6. len 函数
 
 ```python
 len('Hello world') # 字符串
 len([1,2,3,4]) # list
 ```
 
-### 9.6. tuple 函数
+### 9.7. tuple 函数
 
 ```python
 tuple(list('123456')) # 将list类型转换为tuple类型
 ```
 
-### 9.7. range 函数
+### 9.8. range 函数
 
 ```python
 range(5) # == 0,1,2,3,4 （左包含到右不包含）
@@ -470,7 +477,7 @@ range(2,5) # == 2,3,4 （左包含到右不包含）
 range(0,5,2) # 第3个值表示增量，不指定则默认为1
 ```
 
-### 9.8. type 函数
+### 9.9. type 函数
 
 检查数据类型：
 
