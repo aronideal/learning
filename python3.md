@@ -297,8 +297,8 @@ for n in [1,2,3]:
 ```python
 ret = [x for x in range(10)] # 循环出0-9，放到一个list
 
-ret = [(x, y) for x in [1,2,3] for y in [4,5,6]] # 二维计算，放到一个list
-ret = [(x, y) for x in [1,2,3] for y in [4,5,6] if x != 1 and y != 5] # 二维计算，筛选，放到一个list
+ret = [(x, y) for x in [1,2,3] for y in [4,5,6]] # 多层循环，越往前越是外层，放到一个list
+ret = [(x, y) for x in [1,2,3] for y in [4,5,6] if x != 1 and y != 5] # 多层循环，越往前越是外层，筛选，放到一个list
 ```
 
 ### 6.2. while 语句
