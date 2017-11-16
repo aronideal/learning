@@ -292,6 +292,12 @@ for n in [1,2,3]:
     print(n)
 ```
 
+其它用法：
+
+```python
+ret = [x for x in range(10)] # 循环出0-9，放到一个list
+```
+
 ### 6.2. while 语句
 
 ```python
