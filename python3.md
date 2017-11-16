@@ -119,29 +119,37 @@ str[:] # 字符区间获取（左开头到右结尾）
 ''.strip('_')
 ```
 
-### 3.3. 列表
+### 3.3. 元组
 
 ```python
-list = [1, 4, 9, 16, 25]
-list[2]
-list[2:4] # 列表区间获取（左包含到右不包含）。返回的是一个新的列表
-list[2:] # 列表区间获取（左包含到右结尾）
-list[:4] # 列表区间获取（左开头到右不包含）
-list[:] # 列表区间获取（左开头到右结尾）
-list + [36, 49, 64, 81, 100] # 拼接列表
-list.append(33) # 追加列表。返回None，影响list的值
-list.insert(2, 66) # 在索引位置前插入值。返回None，影响list的值
-list.extend([28, 33, 66]) # 扩展列表内容。返回None，影响list的值
-list.remove('6') # 删除列表第一个相同的内容。返回None，影响list值。不存在则报错
-list.pop(index) # 取出并删除list对应索引的数据，不传则从取删最后一个索引位的数据。返回对应的数据。不存在则报错
-list.clear() # 清理list所有的数据。返回None
-list.reverse() # 反转list数据。影响list。返回None
-list.count(4) # 在list查找指定值的出现个数。返回个数。未找到返回0
-list.index('3') 或 list.index('3', 2) 或 list.index('3', 2, 4) # 第一个参数是被搜索索引位的数据，第二个是begin包含，第三个是end不包含。返回第一个相同数据所在的索引，找不到则报错
-list.copy() # 返回一个新地址的list，得到的list做任何操作都不会影响本身的list
+tu = 1, 56, 'abc' # 声明元组，返回的是<class 'tuple'>
+tu[2] # 按索引取值
+tu[2] = 7 # 赋值会报错
 ```
 
-#### 3.3.1. 列表排序
+### 3.4. 列表
+
+```python
+ls = [1, 4, 9, 16, 25]
+ls[2]
+ls[2:4] # 列表区间获取（左包含到右不包含）。返回的是一个新的列表
+ls[2:] # 列表区间获取（左包含到右结尾）
+ls[:4] # 列表区间获取（左开头到右不包含）
+ls[:] # 列表区间获取（左开头到右结尾）
+ls + [36, 49, 64, 81, 100] # 拼接列表
+ls.append(33) # 追加列表。返回None，影响list的值
+ls.insert(2, 66) # 在索引位置前插入值。返回None，影响list的值
+ls.extend([28, 33, 66]) # 扩展列表内容。返回None，影响list的值
+ls.remove('6') # 删除列表第一个相同的内容。返回None，影响list值。不存在则报错
+ls.pop(index) # 取出并删除list对应索引的数据，不传则从取删最后一个索引位的数据。返回对应的数据。不存在则报错
+ls.clear() # 清理list所有的数据。返回None
+ls.reverse() # 反转list数据。影响list。返回None
+ls.count(4) # 在list查找指定值的出现个数。返回个数。未找到返回0
+ls.index('3') 或 ls.index('3', 2) 或 ls.index('3', 2, 4) # 第一个参数是被搜索索引位的数据，第二个是begin包含，第三个是end不包含。返回第一个相同数据所在的索引，找不到则报错
+ls.copy() # 返回一个新地址的list，得到的list做任何操作都不会影响本身的list
+```
+
+#### 3.4.1. 列表排序
 
 * key 列表排序的规则
 
@@ -161,20 +169,20 @@ list.sort(key=lambda item: item[0])
 list.sort(key=lambda item: item[1])
 ```
 
-### 3.4. 布尔值
+### 3.5. 布尔值
 
 ```python
 True # 真
 False # 假
 ```
 
-### 3.5. 空对象
+### 3.6. 空对象
 
 ```python
 None
 ```
 
-### 3.6. 索引规律对照
+### 3.7. 索引规律对照
 
      +---+---+---+---+---+---+
      | P | y | t | h | o | n |
@@ -182,7 +190,7 @@ None
        0   1   2   3   4   5
       -6  -5  -4  -3  -2  -1
 
-### 3.7. 关键字可能被变量名称替代
+### 3.8. 关键字可能被变量名称替代
 
 ```python
 print('hello world')
@@ -190,7 +198,7 @@ print = 'Print by This'
 print('hello world') # 这里将报错，print已不再是函数
 ```
 
-### 3.8. π
+### 3.9. π
 
 ```python
 from math import pi # 需引入math里的pi
@@ -198,7 +206,7 @@ from math import pi # 需引入math里的pi
 print(pi)
 ```
 
-### 3.9. del 关键字
+### 3.10. del 关键字
 
 删除变量（删除对数据的引用），不是删除数据。
 
