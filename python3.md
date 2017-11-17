@@ -96,6 +96,14 @@ import sys
 sys.argv[1]
 ```
 
+#### 2.3.4. 列举出模块里的所有函数或属性
+
+```python
+import sys
+
+print(dir(sys))
+```
+
 ## 3. 变量的使用
 
 ### 3.1. 数字
