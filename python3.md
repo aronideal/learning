@@ -82,6 +82,13 @@ afunc = a.func
 afunc()
 ```
 
+使用 as 关键字重命名引用
+
+```python
+import a as moda
+from a import func as func1
+```
+
 #### 2.3.3. 如果模块需要命令行直接执行，需要添加以下 if 语句
 
 ```python
@@ -102,6 +109,13 @@ sys.argv[1]
 import sys
 
 print(dir(sys))
+```
+
+#### 2.3.5. 模块分包和调用
+
+```python
+import a.b.c # 目录结构为 a/b/c.py
+import a.b1 # 目录结构为 a/b1.py
 ```
 
 ## 3. 变量的使用
