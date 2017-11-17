@@ -684,6 +684,14 @@ sorted([1,2,3,4,5])
 set([1,2,3,4,5])
 ```
 
+### 9.17. math 函数
+
+```python
+from math import isnan
+
+isnan(float('NaN')) # 计算是否非数字
+```
+
 ## 10. 队列操作
 
 ```python
