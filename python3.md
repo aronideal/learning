@@ -666,6 +666,12 @@ type(print)
     <class 'NoneType'>
     <class 'builtin_function_or_method'>
 
+### 9.14. reversed 函数
+
+```python
+list(reversed([1,2,3,4,5]))
+```
+
 ## 10. 队列操作
 
 ```python
