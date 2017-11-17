@@ -52,6 +52,50 @@
 """
 ```
 
+### 2.3. 模块调用
+
+#### 2.3.1. 定义模块
+
+如：hello.py
+
+```python
+def func():
+    print('hello world')
+```
+
+#### 2.3.2. 调用模块的功能
+
+导入库或导入函数
+
+```python
+import a
+a.func()
+
+from a import func # func 这个位置可以写成导入以 ‘,’ 分隔的多个函数，或 *，导入 a 库里的所有函数
+func()
+```
+
+函数调用的名字可任意替代
+
+```python
+afunc = a.func
+afunc()
+```
+
+#### 2.3.3. 如果模块需要命令行直接执行，需要添加以下 if 语句
+
+```python
+if __name__ == '__main__':
+    pass # 这里用实际业务逻辑代替
+```
+
+如需获取参数，需导入 sys 库
+
+```python
+import sys
+sys.argv[1]
+```
+
 ## 3. 变量的使用
 
 ### 3.1. 数字
