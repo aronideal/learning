@@ -174,7 +174,31 @@ list.sort(key=lambda item: item[0])
 list.sort(key=lambda item: item[1])
 ```
 
-### 3.5. set
+### 3.5. 字典 <class 'dict'>
+
+```python
+d = {'a':'av', 'b':'b'}
+```
+
+清空字典
+
+```python
+d.clear() # 返回 <class 'NoneType'>，直接改变 d
+```
+
+拷贝字典
+
+```python
+d.copy() # 返回 <class 'dict'>，不改变 d
+```
+
+列举 key
+
+```python
+list(d.keys()) # 返回 <class 'dict_keys'>，不改变 d
+```
+
+### 3.6. set
 
 不会重复、无序。类型：<class 'set'>
 
@@ -187,7 +211,7 @@ print({'a','b',6,''}|{'a','b',6}) # 或，或者使用or连接。取并集，两
 print({'a','b',6,''}^{'a','b',6}) # 异或。取只有1方有的数据的集合
 ```
 
-### 3.6. list tuple set dict 等区分
+### 3.7. list tuple set dict 等区分
 
 ```python
 ['a', 'b', 'c'] # list
@@ -196,20 +220,20 @@ print({'a','b',6,''}^{'a','b',6}) # 异或。取只有1方有的数据的集合
 {'arg0':'a', 'arg1':'b', 'arg2':'c'} # dict
 ```
 
-### 3.7. 布尔值
+### 3.8. 布尔值
 
 ```python
 True # 真
 False # 假
 ```
 
-### 3.8. 空对象
+### 3.9. 空对象
 
 ```python
 None
 ```
 
-### 3.9. 索引规律对照
+### 3.10. 索引规律对照
 
      +---+---+---+---+---+---+
      | P | y | t | h | o | n |
@@ -217,7 +241,7 @@ None
        0   1   2   3   4   5
       -6  -5  -4  -3  -2  -1
 
-### 3.10. 关键字可能被变量名称替代
+### 3.11. 关键字可能被变量名称替代
 
 ```python
 print('hello world')
@@ -225,7 +249,7 @@ print = 'Print by This'
 print('hello world') # 这里将报错，print已不再是函数
 ```
 
-### 3.11. π
+### 3.12. π
 
 ```python
 from math import pi # 需引入math里的pi
@@ -233,7 +257,7 @@ from math import pi # 需引入math里的pi
 print(pi)
 ```
 
-### 3.12. del 关键字
+### 3.13. del 关键字
 
 删除变量（删除对数据的引用），不是删除数据。
 
@@ -247,14 +271,14 @@ ls = [1,2,3]
 del ls[1] # 删除的是变量引用 ls[1]，而不是数据 2
 ```
 
-### 3.13. in、not in 关键字
+### 3.14. in、not in 关键字
 
 ```python
 '1' in ['1', '2', 'c'] # 返回True
 '1' not in ['1', '2', 'c'] # 返回False
 ```
 
-### 3.14. 序列解包
+### 3.15. 序列解包
 
 ```python
 a, b, c = [1,2,3] # 或 a, b, c = (1,2,3) 或 其它序列形式
