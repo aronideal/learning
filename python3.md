@@ -174,20 +174,30 @@ list.sort(key=lambda item: item[0])
 list.sort(key=lambda item: item[1])
 ```
 
-### 3.5. 布尔值
+### 3.5. set
+
+不会重复、无序。类型：<class 'set'>
+
+```python
+setval = {'a','b',1,2,3,1,1,2,3} # 会把相同的数据剔除掉，剩下唯一的。且数据无序
+setval = set('ab1231123') # 会把相同的数据剔除掉，剩下唯一的。且数据无序
+print({'a','b',6,''}-{'a','b',6}) # 相减，结果里只会筛选出左侧有，右侧没有的数据
+```
+
+### 3.6. 布尔值
 
 ```python
 True # 真
 False # 假
 ```
 
-### 3.6. 空对象
+### 3.7. 空对象
 
 ```python
 None
 ```
 
-### 3.7. 索引规律对照
+### 3.8. 索引规律对照
 
      +---+---+---+---+---+---+
      | P | y | t | h | o | n |
@@ -195,7 +205,7 @@ None
        0   1   2   3   4   5
       -6  -5  -4  -3  -2  -1
 
-### 3.8. 关键字可能被变量名称替代
+### 3.9. 关键字可能被变量名称替代
 
 ```python
 print('hello world')
@@ -203,7 +213,7 @@ print = 'Print by This'
 print('hello world') # 这里将报错，print已不再是函数
 ```
 
-### 3.9. π
+### 3.10. π
 
 ```python
 from math import pi # 需引入math里的pi
@@ -211,7 +221,7 @@ from math import pi # 需引入math里的pi
 print(pi)
 ```
 
-### 3.10. del 关键字
+### 3.11. del 关键字
 
 删除变量（删除对数据的引用），不是删除数据。
 
@@ -225,7 +235,7 @@ ls = [1,2,3]
 del ls[1] # 删除的是变量引用 ls[1]，而不是数据 2
 ```
 
-### 3.11. 序列解包
+### 3.12. 序列解包
 
 ```python
 a, b, c = [1,2,3] # 或 a, b, c = (1,2,3) 或 其它序列形式
@@ -489,6 +499,7 @@ ret = lambdaFunc(77) # ret的值是66+77=132
 ```python
 print('Hello world')
 print('The value of i is', 2)
+print('b' in ['a', 'b', 'c'])
 print('I have a dream', end='.') # end是关键字，在内容结尾追加内容
 print('''\
 Usage: thingy [OPTIONS]
