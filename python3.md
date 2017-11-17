@@ -198,6 +198,13 @@ d.copy() # 返回 <class 'dict'>，不改变 d
 list(d.keys()) # 返回 <class 'dict_keys'>，不改变 d
 ```
 
+通过 key 筛选
+
+```python
+d.get('b') # 返回值的类型。返回值。不存在时返回 <class 'NoneType'>
+同 d['b']，不同的是 key 不存在，会报错
+```
+
 ### 3.6. set
 
 不会重复、无序。类型：<class 'set'>
