@@ -672,6 +672,18 @@ type(print)
 list(reversed([1,2,3,4,5]))
 ```
 
+### 9.15. sorted 函数
+
+```python
+sorted([1,2,3,4,5])
+```
+
+### 9.16. set 函数
+
+```python
+set([1,2,3,4,5])
+```
+
 ## 10. 队列操作
 
 ```python
