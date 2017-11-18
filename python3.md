@@ -839,4 +839,26 @@ deq.popleft() # 返回头部数据，并影响队列数据。空队列执行后�
 print(deq)
 ```
 
+## 11. 读写文件
+
+文件内容：Unix上使用 \n, Windows上使用 \r\n
+
+```python
+f = open('', 'r+') # r只读；r只写；a追加；r+又读又写
+f.read(charSize) # size可不填写，读取出全部内容
+f.readline(charSize) # size可不写，读取出当前一行
+f.write('This is a test\n') # 写入字符，返回写入字符的长度
+f.close()
+```
+
+## 12. 关键字
+
+with
+
+```python
+with open('', 'r') as f:
+    print(f.closed)
+    print('test')
+print(f.closed)
+```
 
