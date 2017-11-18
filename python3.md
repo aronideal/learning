@@ -210,6 +210,20 @@ fillchar：被填充的字符。可不设置，默认空格
 'hel'.rjust(2, '_') # hel
 ```
 
+#### 3.2.7. zfill 左侧填充 0
+
+语法：str.zfill(width)
+
+width: 填充后，完整的字符长度。
+
+返回：被填充后新的 str，如 width <= str，不会被填充
+
+```python
+'h'.zfill(5) # 0000h
+'1.2'.zfill(5) # 001.2
+'-1.2'.zfill(5) # -01.2
+```
+
 ### 3.3. 元组
 
 ```python
