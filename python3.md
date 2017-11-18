@@ -185,9 +185,9 @@ str[:] # 字符区间获取（左开头到右结尾）
 ''.strip('_')
 ```
 
-#### 3.2.6. rjust 右对齐，左侧填充字符
+#### 3.2.6. ljust 右侧填充字符（左对齐）； rjust 左侧填充字符（右对齐）
 
-语法：str.rjust(width[, fillchar])
+语法：str.ljust(width[, fillchar])；str.rjust(width[, fillchar])
 
 width: 填充后，完整的字符长度。
 fillchar：被填充的字符。可不设置，默认空格
@@ -195,6 +195,9 @@ fillchar：被填充的字符。可不设置，默认空格
 返回：被填充后新的 str，如 width <= str，不会被填充
 
 ```python
+'h'.ljust(2, '_') # _h
+'he'.ljust(2, '_') # he
+'hel'.ljust(2, '_') # hel
 'h'.rjust(2, '_') # _h
 'he'.rjust(2, '_') # he
 'hel'.rjust(2, '_') # hel
