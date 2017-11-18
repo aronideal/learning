@@ -758,6 +758,25 @@ from math import isnan
 isnan(float('NaN')) # 计算是否非数字
 ```
 
+### 9.18. str 函数
+
+返回数据的 <class 'str'> 值
+
+```python
+str(66)
+str('xx')
+```
+
+### 9.19. repr 函数
+
+返回数据的python表达式形式的 <class 'str'> 值
+
+```python
+repr(66) # 显示 66
+repr('xx') # 显示 'xx'
+repr("xx") # 显示 'xx'
+```
+
 ## 10. 队列操作
 
 ```python
