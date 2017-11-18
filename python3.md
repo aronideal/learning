@@ -760,7 +760,9 @@ isnan(float('NaN')) # 计算是否非数字
 
 ### 9.18. str 函数
 
-返回数据的 <class 'str'> 值
+返回数据的 <class 'str'> 值。
+
+需要根据数据类型格式化打印，使用 repr 函数。
 
 ```python
 str(66)
@@ -769,7 +771,9 @@ str('xx')
 
 ### 9.19. repr 函数
 
-返回数据的python表达式形式的 <class 'str'> 值
+返回数据的python表达式形式的 <class 'str'> 值。
+
+与 str 函数不同的是，repr 函数打印的是数据类型格式化的字符串。str 函数不会做格式化
 
 ```python
 repr(66) # 显示 66
