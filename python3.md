@@ -21,7 +21,7 @@
 ### 1.2. 设定编码
 
 ```python
-# -*- coding: UTF-8 -*-
+# -*- coding: utf-8 -*-
 ```
 
 ## 2. python3 编程习惯
