@@ -871,3 +871,13 @@ with open('', 'r') as f:
 print(f.closed)
 ```
 
+## 13. json 操作
+
+```python
+import json
+
+json.dumps([1,'2',3,4]) # 序列化对象为JSON字符串
+json.loads(str) # 反序列化JSON字符串
+```
+
+
