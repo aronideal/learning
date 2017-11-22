@@ -971,3 +971,27 @@ finally 语句块。跟在 except 语句块和 else 语句块之下
 finally:
     pass # 离开 try 定义模块之前一定会执行到
 ```
+
+变量的作用域 局部变量/nonlocal/global
+
+```python
+def print_myparam():
+    def func_local():
+        myparam = 'local'  # 这里只是局部变量
+
+    def func_nonlocal():
+        nonlocal myparam  # 声明引用外部变量 myparam
+        myparam = 'nonlocal'
+
+    def func_global():
+        global myparam  # 声明引用全局变量 myparam
+        myparam = 'global'
+
+    myparam = 'init'
+    func_local()
+    func_nonlocal()
+    func_global()
+
+print_myparam()
+```
+
