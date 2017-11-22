@@ -535,7 +535,7 @@ while True:
 break # 结束所在的循环体
 continue # 跳过当前循环索引
 else:
-    print('else 内容块') # 循环条件不满足被触发（break之后不会触发）
+    print('else 内容块') # 循环条件不满足且非break中断时被触发（因为当break会跳出循环，就不会执行循环的else了）
 ```
 
 ## 7. 其它用法
@@ -953,5 +953,12 @@ except C as c: # 多个类型写成： except (A, B, C) as c:
 
 ```python
 raise ex()
+```
+
+else语句块，必须跟在 except 语句块之下
+
+```python
+else:
+    print('else 内容块') # 未捕获到异常时被触发
 ```
 
