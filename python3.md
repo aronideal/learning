@@ -895,3 +895,12 @@ json.loads(str) # 反序列化JSON字符串
 one + 2 # 当变量未定义时，NameError
 '2' + 2 # 强制转换不被接受时，TypeError
 ```
+
+处理异常
+
+```python
+try:
+    ...
+except ValueError:
+    ...
+```
