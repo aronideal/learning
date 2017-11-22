@@ -894,6 +894,8 @@ json.loads(str) # 反序列化JSON字符串
 1/0 # 被0整除时，ZeroDivisionError
 one + 2 # 当变量未定义时，NameError
 '2' + 2 # 强制转换不被接受时，TypeError
+RuntimeError
+KeyboardInterrupt
 ```
 
 处理异常（单个异常）
@@ -924,3 +926,25 @@ except (ValueError):
 except (TypeError, ZeroDivisionError):
     ...
 ```
+
+except捕获到的类型，也可以被上级的所有基类捕获到
+
+```python
+# C extends B extends A，以下抛出 A/B/C 类只能被 except A 捕获到。因为它们是当前类，或基类。
+
+try:
+    raise A/B/C
+except (A):
+    ...
+except (B):
+    ...
+except (C):
+    ...
+```
+
+抛出异常
+
+```python
+raise ex()
+```
+
