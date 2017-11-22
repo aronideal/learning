@@ -942,6 +942,13 @@ except (C):
     ...
 ```
 
+打印异常信息
+
+```python
+except C as c: # 多个类型写成： except (A, B, C) as c:
+    print(c)
+```
+
 抛出异常
 
 ```python
