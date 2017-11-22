@@ -972,7 +972,7 @@ finally:
     pass # 离开 try 定义模块之前一定会执行到
 ```
 
-变量的作用域 局部变量/nonlocal/global
+## 15. 变量的作用域 局部变量/nonlocal/global
 
 ```python
 def print_myparam():
@@ -997,5 +997,23 @@ def print_myparam():
 
 print_myparam()
 print(myparam)
+```
+
+## 16. 类
+
+### 16.1. 类的定义
+
+```python
+class ClassName:
+    """This a test class."""
+
+    def __init__(self):
+        print(self.__doc__)
+```
+
+### 16.2. 类的实例化
+
+```python
+obj = ClassName()
 ```
 
