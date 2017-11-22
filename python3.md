@@ -989,9 +989,13 @@ def print_myparam():
 
     myparam = 'init'
     func_local()
+    print(myparam)
     func_nonlocal()
+    print(myparam)
     func_global()
+    print(myparam)
 
 print_myparam()
+print(myparam)
 ```
 
