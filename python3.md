@@ -880,4 +880,18 @@ json.dumps([1,'2',3,4]) # 序列化对象为JSON字符串
 json.loads(str) # 反序列化JSON字符串
 ```
 
+## 14. 语法错误 & 异常
 
+### 14.1. 语法错误
+
+在运行之前发生的源码错误，有可能是python版本或书写格式错误导致
+
+### 14.2. 异常
+
+系统异常
+
+```python
+1/0 # 被0整除时，ZeroDivisionError
+one + 2 # 当变量未定义时，NameError
+'2' + 2 # 强制转换不被接受时，TypeError
+```
