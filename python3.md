@@ -952,7 +952,7 @@ except C as c: # 多个类型写成： except (A, B, C) as c:
 抛出异常
 
 ```python
-raise ex()
+raise NameError('HiThere')
 ```
 
 else语句块，必须跟在 except 语句块之下
