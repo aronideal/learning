@@ -1015,5 +1015,7 @@ class ClassName:
 
 ```python
 obj = ClassName()
+
+obj = ClassName('a', 'b') # 调用时可接受参数传入，通过 __init__(self, arg0, arg1) 方式定义
 ```
 
