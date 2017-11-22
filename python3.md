@@ -896,11 +896,31 @@ one + 2 # 当变量未定义时，NameError
 '2' + 2 # 强制转换不被接受时，TypeError
 ```
 
-处理异常
+处理异常（单个异常）
 
 ```python
 try:
     ...
 except ValueError:
+    ...
+```
+
+处理异常（多个异常）
+
+```python
+try:
     ...
+except (ValueError, ZeroDivisionError):
+    ...
+```
+
+处理异常（多个except子句）
+
+```python
+try:
+    ...
+except (ValueError):
+    ...
+except (TypeError, ZeroDivisionError):
+    ...
 ```
