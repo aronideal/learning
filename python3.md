@@ -953,12 +953,21 @@ except C as c: # 多个类型写成： except (A, B, C) as c:
 
 ```python
 raise NameError('HiThere')
+raise # 在 except 语句块里直接写 raise 将异常原封继续传递出去
 ```
 
-else语句块，必须跟在 except 语句块之下
+else 语句块。跟在 except 语句块之下
 
 ```python
 else:
-    print('else 内容块') # 未捕获到异常时被触发
+    pass # 未捕获到异常时被触发
 ```
 
+自定义异常
+
+finally 语句块。跟在 except 语句块和 else 语句块之下
+
+```python
+finally:
+    pass # 离开 try 定义模块之前一定会执行到
+```
