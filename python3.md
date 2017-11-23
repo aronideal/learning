@@ -1032,8 +1032,14 @@ class ClassName:
     def method2(self, arg0, arg1):  # 有参数则依次排列
         pass
 
+# 调用方法
 c = ClassName()
 c.method1()
 c.method2('a', 'b')
+# 或者这样调用
+m1 = c.method1
+m2 = c.method2
+m1()
+m2('a', 'b')
 ```
 
