@@ -1094,3 +1094,19 @@ sc = SubClassName()
 
 print(sc.a) # 如果派生类里未定义 a，会打印出 66；否则，打印 77
 ```
+
+重写基类方法，扩充功能
+
+```python
+class ClassName:
+
+    def printme(self):
+        print('I\'m ClassName')
+
+class SubClassName(ClassName):
+
+    def printme(self):
+        ClassName.printme(self) # 调用基类原方法，派生类的参数全部传入
+        print('I\'m SubClassName')
+```
+
