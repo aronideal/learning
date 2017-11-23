@@ -1005,7 +1005,7 @@ print(myparam)
 
 ```python
 class ClassName:
-    """This a test class."""
+    '''This a test class.'''
 
     def __init__(self):
         print(self.__doc__)
