@@ -838,6 +838,22 @@ classinfo可以是多个类名，写成 isinstance(object, (Class1, Class2, ...)
 isinstance(object, classinfo) # 参数都是类实例的名字
 ```
 
+### 9.22. iter & next 函数
+
+```python
+a = 'abc'
+
+ia = iter(a) # 返回迭代器
+
+print(next(ia)) # a
+
+print(next(ia)) # b
+
+print(next(ia)) # c
+
+print(next(ia)) # 报 StopIteration 异常
+```
+
 ## 10. 队列操作
 
 ```python
