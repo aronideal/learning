@@ -1019,7 +1019,26 @@ obj = ClassName()
 obj = ClassName('a', 'b') # 调用时可接受参数传入，通过 __init__(self, arg0, arg1) 方式定义
 ```
 
-### 16.3. 类的方法
+### 16.3. 变量
+
+实例变量，只有当前实例可以使用
+
+```python
+class ClassName:
+
+    def __init__(self):
+        self.aaa = 'hello' # 实例变量只会影响当前实例
+```
+
+类变量，类的所有实例可共用
+
+```python
+class ClassName:
+
+    aaa = 'hello' # 类变量会影响该类的所有实例
+```
+
+### 16.4. 方法
 
 类的方法是类里定义的函数，第一个参数一定是 self，对象的指针，相当于其它语言当中的 this。
 
