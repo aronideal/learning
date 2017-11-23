@@ -1079,4 +1079,18 @@ class ClassName:
         pass
 ```
 
+### 继承
 
+基类和派生类必须在同一个作用域内
+
+```python
+class ClassName: # 基类
+    a = 66
+
+class SubClassName(ClassName): # 派生类。括号里写基类的名称
+    a = 77
+
+sc = SubClassName()
+
+print(sc.a) # 如果派生类里未定义 a，会打印出 66；否则，打印 77
+```
