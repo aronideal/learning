@@ -1019,3 +1019,15 @@ obj = ClassName()
 obj = ClassName('a', 'b') # 调用时可接受参数传入，通过 __init__(self, arg0, arg1) 方式定义
 ```
 
+### 16.3. 类的方法
+
+类的方法是类里定义的函数，第一个参数一定是 self，对象的指针，相当于其它语言当中的 this。
+
+```python
+def mymethod(self):
+    pass
+
+def mymethod(self, arg0, arg1): # 参数依次排列
+    pass
+```
+
