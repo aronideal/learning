@@ -1056,6 +1056,23 @@ class ClassName:
     aaa = 'hello' # 类变量会影响该类的所有实例
 ```
 
+私有变量
+
+以 ‘__’ 开头 ‘__’ 结尾，python中的私有不是其它语言中的私有，并不是不能访问的。可用于：
+
+1，避免名字冲突，当然这不是绝对的
+
+2，保留基类原始功能的copy
+
+```python
+class ClassName:
+
+    def yuanshi(self): # 此方法虽然可被派生类重写，但 __yuanshi__ 方法保存了它原有的功能
+        pass
+    
+    __yuanshi__ = yuanshi
+```
+
 ### 16.4. 方法
 
 类的方法是类里定义的函数，第一个参数一定是 self，对象的指针，相当于其它语言当中的 this。
