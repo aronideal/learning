@@ -1128,3 +1128,18 @@ class SubClassName(ClassName):
         print('I\'m SubClassName')
 ```
 
+多继承
+
+```python
+class ClassName:
+    pass
+
+class ClassName1:
+    pass
+
+class ClassName2:
+    pass
+
+class SubClassName(ClassName, ClassName1, ClassName2):
+    pass
+```
