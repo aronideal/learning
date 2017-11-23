@@ -1063,3 +1063,20 @@ m1()
 m2('a', 'b')
 ```
 
+函数的特殊定义
+
+```python
+def a_out(self):
+    pass
+
+class ClassName:
+
+    a = a_out # 引用外部定义的函数作为方法
+
+    b = a # 引用当前类定义的方法
+    
+    def c(self): # 类中实现的方法
+        pass
+```
+
+
