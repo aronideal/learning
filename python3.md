@@ -820,6 +820,24 @@ repr('xx') # 显示 'xx'
 repr("xx") # 显示 'xx'
 ```
 
+### 9.20. issubclass 函数
+
+判断 class 是否派生自 classinfo 类。
+classinfo可以是多个类名，写成 issubclass(class, (Class1, Class2, ...))
+
+```python
+issubclass(class, classinfo) # 参数都是类的名字
+```
+
+### 9.21. isinstance 函数
+
+判断 object 是否派生自 classinfo 类。
+classinfo可以是多个类名，写成 isinstance(object, (Class1, Class2, ...))
+
+```python
+isinstance(object, classinfo) # 参数都是类实例的名字
+```
+
 ## 10. 队列操作
 
 ```python
