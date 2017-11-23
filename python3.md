@@ -1036,6 +1036,7 @@ class ClassName:
 c = ClassName()
 c.method1()
 c.method2('a', 'b')
+
 # 或者这样调用
 m1 = c.method1
 m2 = c.method2
