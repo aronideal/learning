@@ -1024,10 +1024,16 @@ obj = ClassName('a', 'b') # 调用时可接受参数传入，通过 __init__(sel
 类的方法是类里定义的函数，第一个参数一定是 self，对象的指针，相当于其它语言当中的 this。
 
 ```python
-def mymethod(self):
-    pass
+class ClassName:
 
-def mymethod(self, arg0, arg1): # 参数依次排列
-    pass
+    def method1(self):
+        pass
+
+    def method2(self, arg0, arg1):  # 有参数则依次排列
+        pass
+
+c = ClassName()
+c.method1()
+c.method2('a', 'b')
 ```
 
