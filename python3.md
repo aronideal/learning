@@ -1176,3 +1176,17 @@ class ClassName2:
 class SubClassName(ClassName, ClassName1, ClassName2):
     pass
 ```
+
+### 扩展功能
+
+打印对象字符串
+
+```python
+class C:
+    def __str__(self):
+        return '这是对象的描述'
+    
+print(C()) # 打印出这是对象的描述
+```
+
+
