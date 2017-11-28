@@ -224,6 +224,20 @@ width: 填充后，完整的字符长度。
 '-1.2'.zfill(5) # -01.2
 ```
 
+#### 3.2.8. 转换为大写/小写
+
+```python
+'Hello'.upper() # HELLO
+'Hello'.lower() # hello
+```
+
+#### 3.2.9. 检查开头/结尾
+
+```python
+'hello'.startswith('he') # True
+'hello'.endswith('lo') # True
+```
+
 ### 3.3. 元组
 
 ```python
@@ -1157,7 +1171,7 @@ class ClassName:
 class SubClassName(ClassName):
 
     def printme(self):
-        ClassName.printme(self) # 调用基类原方法，派生类的参数全部传入
+        ClassName.printme(self) # 调用基类原方法，派生类的参数全部传入、或者 super().printme(self)
         print('I\'m SubClassName')
 ```
 
@@ -1179,7 +1193,7 @@ class SubClassName(ClassName, ClassName1, ClassName2):
 
 ### 扩展功能
 
-打印对象字符串
+__str__ 打印对象字符串
 
 ```python
 class C:
@@ -1187,7 +1201,17 @@ class C:
     def __str__(self):
         return '这是对象的描述'
 
-print(C()) # 打印出这是对象的描述
+print(C())
 ```
 
+__eq__ 比较2个对象
+
+```python
+class C:
+    
+    def __eq__(self):
+        return True # 自己设计返回 True 或 False 的业务
+
+print(C().__eq__(C()))
+```
 
