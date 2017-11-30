@@ -122,7 +122,10 @@ dividev = tf.divide(x=6, y=3, name='dividev')
 reduce_mean（求平均值）
 
 ```python
-reduce_meanv = tf.reduce_mean([2,4], name='reduce_meanv')
+x = tf.constant([[1., 1.], [2., 2.]])
+tf.reduce_mean(x)  # 1.5
+tf.reduce_mean(x, 0)  # [1.5, 1.5]
+tf.reduce_mean(x, 1)  # [1.,  2.]
 ```
 
 square（求平方）
