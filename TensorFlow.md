@@ -34,7 +34,7 @@ import tensorflow as tf
 
 #返回：<class 'tensorflow.python.framework.ops.Tensor'>
 
-node1 = tf.constant(value=3.0, dtype=tf.float32, name='const1')
+const1 = tf.constant(value=3.0, dtype=tf.float32, name='const1')
 ```
 
 ### 变量 Variables
@@ -47,7 +47,7 @@ node1 = tf.constant(value=3.0, dtype=tf.float32, name='const1')
 
 #返回：<class 'tensorflow.python.ops.variables.Variable'>
 
-tf.Variable(initial_value=0, name='num')
+var1 = tf.Variable(initial_value=0, name='var1')
 ```
 
 初始化变量，创建完所有变量之后初始化
@@ -60,11 +60,11 @@ session.run(init)
 
 ### Op
 
-add（x、y相加）
+add（相加）
 
 ```python
-#value: 常量值
-#dtype: 常量类型（可选）
+#x: 数据
+#y: 数据
 #name: 常量名称（可选）
 
 #返回：<class 'tensorflow.python.framework.ops.Tensor'>
@@ -72,7 +72,26 @@ add（x、y相加）
 addv = tf.add(x=1, y=2, name='addv')
 ```
 
+matmul（相乘）
+
 ```python
-update = tf.assign(state, new_state)
+#a: 数据
+#b: 数据
+#name: 常量名称（可选）
+
+#返回：<class 'tensorflow.python.framework.ops.Tensor'>
+
+addv = tf.matmul(x=[[2]], y=[[3]], name='addv')
+```
+
+assign（赋值）
+
+```python
+#ref：<class 'tensorflow.python.ops.variables.Variable'> 对象
+#value：赋予的值
+
+#返回：<class 'tensorflow.python.framework.ops.Tensor'>
+
+uv = tf.assign(ref=a, value=b) # 相当于 a = b，把 b 赋给 a
 ```
 
