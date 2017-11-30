@@ -58,6 +58,17 @@ init = tf.global_variables_initializer()
 sess.run(init)
 ```
 
+### 占位符 placeholder
+
+```python
+#dtype: 常量类型
+#name: 常量名称（可选）
+
+#返回：<class 'tensorflow.python.framework.ops.Tensor'>
+
+placeholder1 = tf.placeholder(dtype=tf.float32, name='placeholder1')
+```
+
 ### Op
 
 add（相加）
@@ -119,10 +130,22 @@ assign（赋值）
 uv = tf.assign(ref=a, value=b) # 相当于 a = b，把 b 赋给 a
 ```
 
-## fetch
+## fetch & feed
+
+fetch
 
 ```python
 sess.run([a,b,c]) # 执行多个op
+```
+
+feed
+
+```python
+a1 = tf.placeholder(dtype=tf.float32, name='a1')
+a2 = tf.placeholder(dtype=tf.float32, name='a2')
+a = tf.add(a1, a2, name='a')
+with tf.Session() as sess:
+    print(sess.run(a, feed_dict={a1:6, a2:7})) # 运行时通过 feed_dict 传入给 placeholder
 ```
 
 ## 会话 Session
