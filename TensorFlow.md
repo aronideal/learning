@@ -25,7 +25,7 @@
 import tensorflow as tf
 ```
 
-### 常量
+### 常量 constant
 
 ```python
 #value: 常量值
@@ -55,7 +55,7 @@ var1 = tf.Variable(initial_value=0, name='var1')
 ```python
 init = tf.global_variables_initializer()
 
-session.run(init)
+sess.run(init)
 ```
 
 ### Op
@@ -117,5 +117,32 @@ assign（赋值）
 #返回：<class 'tensorflow.python.framework.ops.Tensor'>
 
 uv = tf.assign(ref=a, value=b) # 相当于 a = b，把 b 赋给 a
+```
+
+## fetch
+
+```python
+sess.run([a,b,c]) # 执行多个op
+```
+
+## 会话 Session
+
+
+创建和运行（注意关闭会话）
+
+
+```python
+sess = tf.Session()
+sess.run(...)
+...
+sess.close()
+```
+
+一次性创建和运行（无需手动关闭会话）
+
+```python
+with tf.Session() as sess:
+    sess.run(...)
+    ...
 ```
 
