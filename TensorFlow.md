@@ -72,16 +72,40 @@ add（相加）
 addv = tf.add(x=1, y=2, name='addv')
 ```
 
-matmul（相乘）
+subtract（相减）
 
 ```python
-#a: 数据
-#b: 数据
+#x: 数据
+#y: 数据
 #name: 常量名称（可选）
 
 #返回：<class 'tensorflow.python.framework.ops.Tensor'>
 
-addv = tf.matmul(x=[[2]], y=[[3]], name='addv')
+subtractv = tf.subtract(x=1, y=2, name='subtractv')
+```
+
+multiply（相乘）
+
+```python
+#x: 数据
+#y: 数据
+#name: 常量名称（可选）
+
+#返回：<class 'tensorflow.python.framework.ops.Tensor'>
+
+multiplyv = tf.multiply(x=2, y=3, name='multiplyv')
+```
+
+divide（相除）
+
+```python
+#x: 数据
+#y: 数据
+#name: 常量名称（可选）
+
+#返回：<class 'tensorflow.python.framework.ops.Tensor'>
+
+dividev = tf.divide(x=6, y=3, name='dividev')
 ```
 
 assign（赋值）
