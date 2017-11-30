@@ -119,6 +119,18 @@ divide（相除）
 dividev = tf.divide(x=6, y=3, name='dividev')
 ```
 
+reduce_mean（求平均值）
+
+```python
+reduce_meanv = tf.reduce_mean([2,4], name='reduce_meanv')
+```
+
+square（求平方）
+
+```python
+squarev = tf.square(6, name='squarev')
+```
+
 assign（赋值）
 
 ```python
