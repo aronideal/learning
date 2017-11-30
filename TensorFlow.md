@@ -10,3 +10,7 @@
 ## 使用feed、fetch为任意的操作赋值或获取数据
 
 ## TensorFlow是一个编程系统，图graphs 中的节点称为 op（operation），一个op获得0或多个Tensor，执行计算，产生0或多个Tensor
+
+## TensorFlow 概念图
+
+![TensorFlow 概念图](/TensorFlow-概念图.png)
