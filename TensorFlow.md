@@ -135,7 +135,11 @@ uv = tf.assign(ref=a, value=b) # 相当于 a = b，把 b 赋给 a
 fetch
 
 ```python
-sess.run([a,b,c]) # 执行多个op
+a1 = tf.constant(6, name='a1')
+a2 = tf.constant(7, name='a2')
+
+with tf.Session() as sess:
+    print(sess.run([a1, a2])) # 执行多个op
 ```
 
 feed
@@ -144,6 +148,7 @@ feed
 a1 = tf.placeholder(dtype=tf.float32, name='a1')
 a2 = tf.placeholder(dtype=tf.float32, name='a2')
 a = tf.add(a1, a2, name='a')
+
 with tf.Session() as sess:
     print(sess.run(a, feed_dict={a1:6, a2:7})) # 运行时通过 feed_dict 传入给 placeholder
 ```
