@@ -9,6 +9,8 @@
 
     openssl req -new -sha256 -key mycert.key -out mycert.csr
 
+note: 打开编辑器打开mycert.csr，去掉收尾的分隔符。中间的BASE64数据可当成P10数据使用
+
 ## 3. Create X509 cer
 
     ...ellipsis
