@@ -41,7 +41,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         MODog * dog = [[MODog alloc] init];
-        [dog setName:@"DD"];
+        [dog setName:@"旺旺"];
         [dog play];
     }
     return 0;
