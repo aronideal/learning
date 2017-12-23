@@ -52,5 +52,4 @@ int main(int argc, const char * argv[]) {
 
 ```Objective-C
 -(void) setName : (NSString *) _name andArg1 : (int) _arg1;
-```Objective-C
 ```
