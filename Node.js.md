@@ -17,7 +17,7 @@ JSON String = JSON.stringify(Javascript Object)
 
 ## 3. 模块使用
 
-#### 3.1 建立 http 服务，文件名 testhttp.js
+#### 3.1. 建立 http 服务，文件名 testhttp.js
 
 ```javascript
 const http = require('http');
@@ -43,8 +43,31 @@ server.listen(port, hostname, () => {
 #### 3.2. 请求 http 服务，文件名 testhttp_send.js
 
 ```javascript
+const querystring = require("querystring");
 const http = require('http');
 
+const postData = querystring.stringify({
+    'msg': 'Hello World!'
+});
 
+const options = {
+    hostname: '10.0.6.40',
+    port: 8089,
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Length': Buffer.byteLength(postData)
+    }
+};
+
+const req = http.request(options, (res) => {
+    res.setEncoding('UTF-8');
+    res.on('data', (chunk) => {
+        console.log(chunk);
+    });
+});
+
+req.write(postData);
+req.end();
 ```
 
