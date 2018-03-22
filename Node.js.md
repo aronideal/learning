@@ -40,7 +40,7 @@ server.listen(port, hostname, () => {
 });
 ```
 
-#### 3.2. 请求 HTTP 服务，文件名 testhttp_send.js
+#### 3.2. 请求 HTTP 服务，文件名 testhttp_req.js
 
 ```javascript
 const querystring = require("querystring");
