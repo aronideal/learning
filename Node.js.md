@@ -17,7 +17,7 @@ JSON String = JSON.stringify(Javascript Object)
 
 ## 3. 模块使用
 
-#### 3.1. 建立 http 服务，文件名 testhttp.js
+#### 3.1. 建立 HTTP 服务，文件名 testhttp.js
 
 ```javascript
 const http = require('http');
@@ -40,7 +40,7 @@ server.listen(port, hostname, () => {
 });
 ```
 
-#### 3.2. 请求 http 服务，文件名 testhttp_send.js
+#### 3.2. 请求 HTTP 服务，文件名 testhttp_send.js
 
 ```javascript
 const querystring = require("querystring");
