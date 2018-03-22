@@ -7,7 +7,7 @@ node code.js
 
 ## 2. 功能点
 
-#### 2.1. JSON格式解析与格式化
+#### 2.1. JSON 解析与格式化
 
 ```javascript
 Javascript Object = JSON.parse(JSON String)
