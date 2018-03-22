@@ -1,7 +1,9 @@
 
 ## 执行脚本
 
-    node code.js
+```javascript
+node code.js
+```
 
 ## 数据处理
 
