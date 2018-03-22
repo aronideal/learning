@@ -1,13 +1,13 @@
 
-## 执行脚本
+## 1. 执行脚本
 
 ```javascript
 node code.js
 ```
 
-## 功能点
+## 2. 功能点
 
-#### JSON格式解析与格式化
+#### 2.1. JSON格式解析与格式化
 
 ```javascript
 Javascript Object = JSON.parse(JSON String)
@@ -15,9 +15,9 @@ Javascript Object = JSON.parse(JSON String)
 JSON String = JSON.stringify(Javascript Object)
 ```
 
-## 模块使用
+## 3. 模块使用
 
-#### 建立 http 服务，文件名 testhttp.js
+#### 3.1 建立 http 服务，文件名 testhttp.js
 
 ```javascript
 const http = require('http');
@@ -40,7 +40,7 @@ server.listen(port, hostname, () => {
 });
 ```
 
-#### 请求 http 服务，文件名 testhttp_send.js
+#### 3.2. 请求 http 服务，文件名 testhttp_send.js
 
 ```javascript
 const http = require('http');
