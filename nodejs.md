@@ -10,6 +10,7 @@ const port = 8089;
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.statusMessage = 'OK';
+    res.setEncoding('UTF-8');
     // 设置响应内容类别
     res.setHeader('Content-Type', 'application/xml');
     // 写入内容
