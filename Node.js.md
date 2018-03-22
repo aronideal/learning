@@ -5,7 +5,7 @@
 node code.js
 ```
 
-## 数据处理
+## 功能点
 
 #### JSON格式解析与格式化
 
@@ -15,7 +15,9 @@ Javascript Object = JSON.parse(JSON String)
 JSON String = JSON.stringify(Javascript Object)
 ```
 
-## 1. 建立 http 服务，文件名 testhttp.js
+## 模块使用
+
+#### 建立 http 服务，文件名 testhttp.js
 
 ```javascript
 const http = require('http');
@@ -38,7 +40,7 @@ server.listen(port, hostname, () => {
 });
 ```
 
-## 2. 请求 http 服务，文件名 testhttp_send.js
+#### 请求 http 服务，文件名 testhttp_send.js
 
 ```javascript
 const http = require('http');
