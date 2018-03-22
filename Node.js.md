@@ -70,7 +70,7 @@ const req = http.request(options, (res) => {
             if (/^application\/json/.test(contentType)) {
                 console.log(chunk);
             } else {
-                console.log(`ContentType '${contentType}' unsupported!`);
+                console.log(`content-type '${contentType}' unsupported!`);
             }
         } else {
             console.log(`HTTP Error: ${statusCode}, ${statusMessage}!`);
