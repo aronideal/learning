@@ -53,7 +53,7 @@ const postData = querystring.stringify({
 const options = {
     hostname: '10.0.6.40',
     port: 8089,
-    method: 'GET',
+    method: 'POST', // GET or POST
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Content-Length': Buffer.byteLength(postData)
