@@ -8,8 +8,8 @@
 #### JSON格式解析与格式化
 
 ```javascript
-javascript object = JSON.parse(json string)
-json string = JSON.stringify(javascript object)
+Javascript Object = JSON.parse(JSON String)
+JSON String = JSON.stringify(Javascript Object)
 ```
 
 ## 1. 建立 http 服务，文件名 testhttp.js
