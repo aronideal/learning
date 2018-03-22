@@ -63,7 +63,11 @@ const options = {
 const req = http.request(options, (res) => {
     res.setEncoding('UTF-8');
     res.on('data', (chunk) => {
-        console.log(chunk);
+        if (200 === res.statusCode) {
+            console.log(chunk);
+        } else {
+            console.log(`HTTP Error: ${res.statusCode}, ${res.statusMessage}`);
+        }
     });
 });
 
