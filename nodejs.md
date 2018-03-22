@@ -1,5 +1,18 @@
 
-## 建立 http 服务，文件名 testhttp.js
+## 执行脚本
+
+    node code.js
+
+## 数据处理
+
+#### JSON格式解析与格式化
+
+```javascript
+javascript object = JSON.parse(json string)
+json string = JSON.stringify(javascript object)
+```
+
+## 1. 建立 http 服务，文件名 testhttp.js
 
 ```javascript
 const http = require('http');
@@ -10,7 +23,6 @@ const port = 8089;
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.statusMessage = 'OK';
-    res.setEncoding('UTF-8');
     // 设置响应内容类别
     res.setHeader('Content-Type', 'application/xml');
     // 写入内容
@@ -23,7 +35,11 @@ server.listen(port, hostname, () => {
 });
 ```
 
-## 执行脚本
+## 2. 请求 http 服务，文件名 testhttp_send.js
 
-    node testhttp.js
+```javascript
+const http = require('http');
+
+
+```
 
