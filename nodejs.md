@@ -24,5 +24,5 @@ server.listen(port, hostname, () => {
 
 ## 执行脚本
 
-    nodejs testhttp.js
+    node testhttp.js
 
