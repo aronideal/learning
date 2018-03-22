@@ -61,12 +61,19 @@ const options = {
 };
 
 const req = http.request(options, (res) => {
+    const statusCode = res.statusCode;
+    const statusMessage = res.statusMessage;
+    const contentType = res.headers['Content-Type'];
     res.setEncoding('UTF-8');
     res.on('data', (chunk) => {
-        if (200 === res.statusCode) {
-            console.log(chunk);
+        if (200 === statusCode) {
+            if (/^application\/json/.test(contentType)) {
+                console.log(chunk);
+            } else {
+                console.log(`ContentType '${contentType}' unsupported!`);
+            }
         } else {
-            console.log(`HTTP Error: ${res.statusCode}, ${res.statusMessage}`);
+            console.log(`HTTP Error: ${statusCode}, ${statusMessage}!`);
         }
     });
 });
