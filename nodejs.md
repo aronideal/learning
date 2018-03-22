@@ -8,8 +8,8 @@ const hostname = '10.0.6.40';
 const port = 8089;
 
 const server = http.createServer((req, res) => {
-    // 响应码
     res.statusCode = 200;
+    res.statusMessage = 'OK';
     // 设置响应内容类别
     res.setHeader('Content-Type', 'application/xml');
     // 写入内容
