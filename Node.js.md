@@ -1,4 +1,6 @@
 
+[官方 latest-v6.x API](https://nodejs.org/docs/latest-v6.x/api)
+
 ## 1. 执行脚本
 
 ```javascript
