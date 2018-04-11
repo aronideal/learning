@@ -7,7 +7,7 @@ MySQL用法
 #### 1.1. 创建数据库
 
 ```mysql
-CREATE DATABASE mydb CHARACTER SET utf8;
+CREATE DATABASE `mydb` CHARACTER SET utf8;
 ```
 
 * 语法：
@@ -24,7 +24,7 @@ create_specification:
 #### 1.2. 使用数据库
 
 ```mysql
-USE mydb;
+USE `mydb`;
 ```
 
 * 语法：
