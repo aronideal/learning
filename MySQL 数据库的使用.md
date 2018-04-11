@@ -352,10 +352,7 @@ SELECT
 
 ```mysql
 CREATE INDEX `mydb`.`ind_name`
-    ON `mydb`.`mytab2` (`name`)
-
-index_col_name:
-    col_name [(length)] [ASC | DESC]
+    ON `mydb`.`mytab2` (`name` ASC);
 ```
 
 * 语法：
@@ -383,4 +380,17 @@ CREATE USER 'myuser'@'%' IDENTIFIED BY PASSWORD '123456';
 CREATE USER user IDENTIFIED BY [PASSWORD] 'password';
 ```
 
+#### 1.5. 修改密码
 
+```mysql
+SET PASSWORD FOR 'myuser'@'%' = PASSWORD('123456');
+```
+
+* 语法：
+
+```mysql
+SET PASSWORD = PASSWORD('some password')
+SET PASSWORD FOR user = PASSWORD('some password')
+```
+
+#### 1.6. 授权用户
