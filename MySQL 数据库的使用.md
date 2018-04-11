@@ -219,11 +219,13 @@ DESCRIBE `mydb`.`mytab1`;
 
 ```mysql
 LOCK TABLES `mydb`.`mytab1` WRITE;
+
 INSERT INTO `mydb`.`mytab1`
 (`id`,`tab2_id`,`name`,`time`,`timestamp`)
 VALUES
 ('d4978f8b-8915-4366-abcb-2fbbd625e388','15477a35-307e-431c-ac28-5f187d0145c3','data1',NOW(),NOW()),
 ('a432cb60-f7b9-4c1c-8131-e25e219d994b','15477a35-307e-431c-ac28-5f187d0145c3','data2',NOW(),NOW());
+
 UNLOCK TABLES;
 ```
 
@@ -251,9 +253,57 @@ INSERT [LOW_PRIORITY | DELAYED] [IGNORE]
 
 #### 1.6. 修改数据
 
+```mysql
+LOCK TABLES `mydb`.`mytab1` WRITE;
+
+UPDATE `mydb`.`mytab1` SET `name`='data1_new' WHERE `id`='d4978f8b-8915-4366-abcb-2fbbd625e388';
+
+UNLOCK TABLES;
+```
+
+* 语法：
+
+```mysql
+Single-table syntax: 
+
+UPDATE [LOW_PRIORITY] [IGNORE] tbl_name
+    SET col_name1=expr1 [, col_name2=expr2 ...]
+    [WHERE where_definition]
+    [ORDER BY ...]
+    [LIMIT row_count]
+
+Multiple-table syntax: 
+
+UPDATE [LOW_PRIORITY] [IGNORE] tbl_name [, tbl_name ...]
+    SET col_name1=expr1 [, col_name2=expr2 ...]
+    [WHERE where_definition]
+```
+
 #### 1.7. 删除数据
 
+```mysql
+LOCK TABLES `mydb`.`mytab1` WRITE;
+
+UNLOCK TABLES;
+```
+
+* 语法：
+
+```mysql
+```
+
 #### 1.7. 查询数据
+
+```mysql
+LOCK TABLES `mydb`.`mytab1` READ;
+
+UNLOCK TABLES;
+```
+
+* 语法：
+
+```mysql
+```
 
 #### 1.4. 创建索引
 
