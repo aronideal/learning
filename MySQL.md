@@ -191,7 +191,29 @@ alter_specification:
 
 #### 1.6. 删除表
 
+```mysql
+DROP TABLE IF EXISTS `mydb`.`mytab1`;
+```
+
+* 语法：
+
+```mysql
+DROP [TEMPORARY] TABLE [IF EXISTS]
+    tbl_name [, tbl_name] ...
+    [RESTRICT | CASCADE]
+```
+
 #### 1.7. 查询表结构
+
+```mysql
+DESCRIBE `mydb`.`mytab1`;
+```
+
+* 语法：
+
+```mysql
+{DESCRIBE | DESC} tbl_name [col_name | wild]
+```
 
 #### 1.5. 新增数据
 
