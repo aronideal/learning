@@ -148,8 +148,8 @@ select_statement:
 #### 1.4. 创建索引
 
 ```mysql
-CREATE INDEX ind_name
-    ON `mydb`.`mytab2` (name)
+CREATE INDEX `mydb`.`ind_name`
+    ON `mydb`.`mytab2` (`name`)
 
 index_col_name:
     col_name [(length)] [ASC | DESC]
