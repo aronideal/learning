@@ -63,11 +63,11 @@
 
         \[title\](链接地址)
 
-<https://www.baidu.com />
+<https://www.baidu.com/>
 
 * 语法：
 
-        <https://www.baidu.com />
+        <https://www.baidu.com/>
 
 #### 2.6. &amp; 关键字
 
