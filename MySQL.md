@@ -1,10 +1,16 @@
 
-MySQL
-=====
+MySQL用法
+=========
 
 ## 1. 脚本语法
 
 #### 1.1. 创建数据库
+
+```mysql
+CREATE DATABASE mydb CHARACTER SET utf8;
+```
+
+* 语法：
 
 ```mysql
 CREATE DATABASE [IF NOT EXISTS] db_name
@@ -15,25 +21,33 @@ create_specification:
   | [DEFAULT] COLLATE collation_name
 ```
 
-* 举例：
-
-```mysql
-CREATE DATABASE mydb CHARACTER SET utf8;
-```
-
 #### 1.2. 使用数据库
-
-```mysql
-USE db_name
-```
-
-* 举例：
 
 ```mysql
 USE mydb;
 ```
 
+* 语法：
+
+```mysql
+USE db_name
+```
+
 #### 1.3. 创建表
+
+```mysql
+CREATE TABLE `mydb`.`mytab1` (
+  `id` varchar(36) NOT NULL COMMENT 'ID',
+  `tab2_id` varchar(36) NOT NULL COMMENT '表2的ID',
+  `name` varchar(40) UNIQUE NOT NULL COMMENT '名称',
+  `time` datetime NULL DEFAULT NOW() COMMENT '时间',
+  `timestamp` timestamp NULL DEFAULT NOW() COMMENT '时间戳',
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`tab2_id`) REFERENCES `mydb`.`mytab2`(`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='我的表1';
+```
+
+* 语法：
 
 ```mysql
 CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name
@@ -131,16 +145,3 @@ select_statement:
     [IGNORE | REPLACE] [AS] SELECT ...   (Some legal select statement)
 ```
 
-* 举例：
-
-```mysql
-CREATE TABLE `mydb`.`mytab1` (
-  `id` varchar(36) NOT NULL COMMENT 'ID',
-  `tab2_id` varchar(36) NOT NULL COMMENT '表2的ID',
-  `name` varchar(40) UNIQUE NOT NULL COMMENT '名称',
-  `time` datetime NULL DEFAULT NOW() COMMENT '时间',
-  `timestamp` timestamp NULL DEFAULT NOW() COMMENT '时间戳',
-  PRIMARY KEY (`id`),
-  FOREIGN KEY (`tab2_id`) REFERENCES `mydb`.`mytab2`(`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='我的表1';
-```
