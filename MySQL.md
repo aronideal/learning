@@ -161,7 +161,7 @@ index_col_name:
 CREATE [UNIQUE|FULLTEXT|SPATIAL] INDEX index_name [index_type]
     ON tbl_name (index_col_name,...)
 
-Index_type:
+index_type:
     [BTREE | FULLTEXT | HASH | RTREE]
 
 index_col_name:
