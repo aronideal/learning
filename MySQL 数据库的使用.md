@@ -437,28 +437,28 @@ REVOKE priv_type [(column_list)] [, priv_type [(column_list)]] ...
 
 ##### 权限类别 priv_type
 
-`
-ALL [PRIVILEGES]  Sets all simple privileges except GRANT OPTION  
-ALTER  Allows use of ALTER TABLE  
-CREATE  Allows use of CREATE TABLE  
-CREATE TEMPORARY TABLES  Allows use of CREATE TEMPORARY TABLE  
-DELETE  Allows use of DELETE  
-DROP  Allows use of DROP TABLE  
-EXECUTE  Allows the user to run stored procedures (MySQL 5.0)  
-FILE  Allows use of SELECT ... INTO OUTFILE and LOAD DATA INFILE  
-INDEX  Allows use of CREATE INDEX and DROP INDEX  
-INSERT  Allows use of INSERT  
-LOCK TABLES  Allows use of LOCK TABLES on tables for which you have the SELECT privilege  
-PROCESS  Allows use of SHOW FULL PROCESSLIST  
-REFERENCES  Not yet implemented  
-RELOAD  Allows use of FLUSH  
-REPLICATION CLIENT  Allows the user to ask where the slave or master servers are  
-REPLICATION SLAVE  Needed for replication slaves (to read binary log events from the master)  
-SELECT  Allows use of SELECT  
-SHOW DATABASES  SHOW DATABASES shows all databases  
-SHUTDOWN  Allows use of mysqladmin shutdown  
-SUPER  Allows use of CHANGE MASTER, KILL, PURGE MASTER LOGS, and SET GLOBAL statements, the mysqladmin debug command; allows you to connect (once) even if max_connections is reached  
-UPDATE  Allows use of UPDATE  
-USAGE  Synonym for ``no privileges''  
-GRANT OPTION  Allows privileges to be granted  
-`
+```
+ALL [PRIVILEGES]  Sets all simple privileges except GRANT OPTION
+ALTER  Allows use of ALTER TABLE
+CREATE  Allows use of CREATE TABLE
+CREATE TEMPORARY TABLES  Allows use of CREATE TEMPORARY TABLE
+DELETE  Allows use of DELETE
+DROP  Allows use of DROP TABLE
+EXECUTE  Allows the user to run stored procedures (MySQL 5.0)
+FILE  Allows use of SELECT ... INTO OUTFILE and LOAD DATA INFILE
+INDEX  Allows use of CREATE INDEX and DROP INDEX
+INSERT  Allows use of INSERT
+LOCK TABLES  Allows use of LOCK TABLES on tables for which you have the SELECT privilege
+PROCESS  Allows use of SHOW FULL PROCESSLIST
+REFERENCES  Not yet implemented
+RELOAD  Allows use of FLUSH
+REPLICATION CLIENT  Allows the user to ask where the slave or master servers are
+REPLICATION SLAVE  Needed for replication slaves (to read binary log events from the master)
+SELECT  Allows use of SELECT
+SHOW DATABASES  SHOW DATABASES shows all databases
+SHUTDOWN  Allows use of mysqladmin shutdown
+SUPER  Allows use of CHANGE MASTER, KILL, PURGE MASTER LOGS, and SET GLOBAL statements, the mysqladmin debug command; allows you to connect (once) even if max_connections is reached
+UPDATE  Allows use of UPDATE
+USAGE  Synonym for ``no privileges''
+GRANT OPTION  Allows privileges to be granted
+```
