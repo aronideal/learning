@@ -256,7 +256,7 @@ INSERT [LOW_PRIORITY | DELAYED] [IGNORE]
 ```mysql
 LOCK TABLES `mydb`.`mytab1` WRITE;
 
-UPDATE `mydb`.`mytab1` SET `name`='data1_new' WHERE `id`='d4978f8b-8915-4366-abcb-2fbbd625e388';
+UPDATE `mydb`.`mytab1` t SET t.`name`='data1_new' WHERE t.`id`='d4978f8b-8915-4366-abcb-2fbbd625e388';
 
 UNLOCK TABLES;
 ```
@@ -284,12 +284,34 @@ UPDATE [LOW_PRIORITY] [IGNORE] tbl_name [, tbl_name ...]
 ```mysql
 LOCK TABLES `mydb`.`mytab1` WRITE;
 
+DELETE t FROM `mydb`.`mytab1` t WHERE t.`id`='d4978f8b-8915-4366-abcb-2fbbd625e388';
+
 UNLOCK TABLES;
 ```
 
 * 语法：
 
 ```mysql
+Single-table syntax: 
+
+DELETE [LOW_PRIORITY] [QUICK] [IGNORE] FROM tbl_name
+       [WHERE where_definition]
+       [ORDER BY ...]
+       [LIMIT row_count]
+
+Multiple-table syntax: 
+
+DELETE [LOW_PRIORITY] [QUICK] [IGNORE]
+       tbl_name[.*] [, tbl_name[.*] ...]
+       FROM table_references
+       [WHERE where_definition]
+
+Or: 
+
+DELETE [LOW_PRIORITY] [QUICK] [IGNORE]
+       FROM tbl_name[.*] [, tbl_name[.*] ...]
+       USING table_references
+       [WHERE where_definition]
 ```
 
 #### 1.7. 查询数据
