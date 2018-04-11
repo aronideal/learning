@@ -119,4 +119,4 @@
 
         strong: \*\*内容\*\* 或 \_\_内容\_\_，em: \*内容\* 或 \_内容\_
 
-
+Use the `printf()` function.
