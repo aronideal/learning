@@ -168,5 +168,16 @@ index_col_name:
     col_name [(length)] [ASC | DESC]
 ```
 
+#### 1.5. 创建用户
+
+```mysql
+CREATE USER 'myuser'@'%' IDENTIFIED BY PASSWORD '123456';
+```
+
+* 语法：
+
+```mysql
+CREATE USER user IDENTIFIED BY [PASSWORD] 'password';
+```
 
 
