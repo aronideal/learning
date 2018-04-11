@@ -6,7 +6,7 @@ MySQL
 
 #### 1.1. 创建数据库
 
-```sql
+```mysql
 CREATE DATABASE [IF NOT EXISTS] db_name
     [create_specification [, create_specification] ...]
 
@@ -23,12 +23,12 @@ CREATE DATABASE mydb CHARACTER SET utf8;
 
 #### 1.2. 使用数据库
 
-```sql
+```mysql
 USE db_name
 ```
 
 * 举例：
 
-```sql
+```mysql
 USE mydb;
 ```
