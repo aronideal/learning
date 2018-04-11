@@ -217,6 +217,38 @@ DESCRIBE `mydb`.`mytab1`;
 
 #### 1.5. 新增数据
 
+```mysql
+LOCK TABLES `mydb`.`mytab1` WRITE;
+INSERT INTO `mydb`.`mytab1`
+(`id`,`tab2_id`,`name`,`time`,`timestamp`)
+VALUES
+('d4978f8b-8915-4366-abcb-2fbbd625e388','15477a35-307e-431c-ac28-5f187d0145c3','data1',NOW(),NOW()),
+('a432cb60-f7b9-4c1c-8131-e25e219d994b','15477a35-307e-431c-ac28-5f187d0145c3','data2',NOW(),NOW());
+UNLOCK TABLES;
+```
+
+* 语法：
+
+```mysql
+INSERT [LOW_PRIORITY | DELAYED] [IGNORE]
+    [INTO] tbl_name [(col_name,...)]
+    VALUES ({expr | DEFAULT},...),(...),...
+    [ ON DUPLICATE KEY UPDATE col_name=expr, ... ]
+
+Or: 
+
+INSERT [LOW_PRIORITY | DELAYED] [IGNORE]
+    [INTO] tbl_name
+    SET col_name={expr | DEFAULT}, ...
+    [ ON DUPLICATE KEY UPDATE col_name=expr, ... ]
+
+Or: 
+
+INSERT [LOW_PRIORITY | DELAYED] [IGNORE]
+    [INTO] tbl_name [(col_name,...)]
+    SELECT ...
+```
+
 #### 1.6. 修改数据
 
 #### 1.7. 删除数据
