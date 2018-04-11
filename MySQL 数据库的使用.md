@@ -2,9 +2,7 @@
 MySQL 数据库的使用
 =================
 
-# 1. 脚本语法
-
-## 1.1. 创建数据库
+## 1. 创建数据库
 
 ```mysql
 CREATE DATABASE `mydb` CHARACTER SET utf8;
@@ -21,7 +19,7 @@ create_specification:
   | [DEFAULT] COLLATE collation_name
 ```
 
-## 1.2. 使用数据库
+## 2. 使用数据库
 
 ```mysql
 USE `mydb`;
@@ -33,9 +31,9 @@ USE `mydb`;
 USE db_name
 ```
 
-## 1.3. 表
+## 3. 表
 
-#### 1.3.1. 创建表
+#### 3.1. 创建表
 
 ```mysql
 CREATE TABLE `mydb`.`mytab1` (
@@ -147,7 +145,7 @@ select_statement:
     [IGNORE | REPLACE] [AS] SELECT ...   (Some legal select statement)
 ```
 
-#### 1.3.2. 修改表结构
+#### 3.2. 修改表结构
 
 ```mysql
 ALTER TABLE `mydb`.`mytab1` RENAME TO `mytab1_new`;
@@ -191,7 +189,7 @@ alter_specification:
   | table_options
 ```
 
-#### 1.3.3. 删除表
+#### 3.3. 删除表
 
 ```mysql
 DROP TABLE IF EXISTS `mydb`.`mytab1`;
@@ -205,7 +203,7 @@ DROP [TEMPORARY] TABLE [IF EXISTS]
     [RESTRICT | CASCADE]
 ```
 
-#### 1.3.4. 查询表结构
+#### 3.4. 查询表结构
 
 ```mysql
 DESCRIBE `mydb`.`mytab1`;
@@ -217,7 +215,7 @@ DESCRIBE `mydb`.`mytab1`;
 {DESCRIBE | DESC} tbl_name [col_name | wild]
 ```
 
-#### 1.3.5. 新增数据
+#### 3.5. 新增数据
 
 ```mysql
 LOCK TABLES `mydb`.`mytab1` WRITE;
@@ -253,7 +251,7 @@ INSERT [LOW_PRIORITY | DELAYED] [IGNORE]
     SELECT ...
 ```
 
-#### 1.3.6. 修改数据
+#### 3.6. 修改数据
 
 ```mysql
 LOCK TABLES `mydb`.`mytab1` WRITE;
@@ -281,7 +279,7 @@ UPDATE [LOW_PRIORITY] [IGNORE] tbl_name [, tbl_name ...]
     [WHERE where_definition]
 ```
 
-#### 1.3.7. 删除数据
+#### 3.7. 删除数据
 
 ```mysql
 LOCK TABLES `mydb`.`mytab1` WRITE;
@@ -316,7 +314,7 @@ DELETE [LOW_PRIORITY] [QUICK] [IGNORE]
        [WHERE where_definition]
 ```
 
-#### 1.3.8. 查询数据
+#### 3.8. 查询数据
 
 ```mysql
 LOCK TABLES `mydb`.`mytab1` READ;
@@ -350,9 +348,9 @@ SELECT
       [FOR UPDATE | LOCK IN SHARE MODE]]
 ```
 
-## 1.4. 索引
+## 4. 索引
 
-#### 1.4.1. 创建索引
+#### 4.1. 创建索引
 
 ```mysql
 CREATE INDEX `mydb`.`ind_name`
@@ -372,9 +370,9 @@ index_col_name:
     col_name [(length)] [ASC | DESC]
 ```
 
-## 1.5. 用户
+## 5. 用户
 
-#### 1.5.1. 创建用户
+#### 5.1. 创建用户
 
 ```mysql
 CREATE USER 'myuser'@'%' IDENTIFIED BY PASSWORD '123456';
@@ -386,7 +384,7 @@ CREATE USER 'myuser'@'%' IDENTIFIED BY PASSWORD '123456';
 CREATE USER user IDENTIFIED BY [PASSWORD] 'password';
 ```
 
-#### 1.5.2. 修改密码
+#### 5.2. 修改密码
 
 ```mysql
 SET PASSWORD FOR 'myuser'@'%' = PASSWORD('123456');
@@ -399,7 +397,7 @@ SET PASSWORD = PASSWORD('some password')
 SET PASSWORD FOR user = PASSWORD('some password')
 ```
 
-#### 1.5.3. 权限管理
+#### 5.3. 权限管理
 
 ##### 授权
 
