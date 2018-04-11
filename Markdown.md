@@ -53,15 +53,21 @@
 
 * 语法：
 
-        ![描述](图片完整路径或相对路径)
+        ![alt](图片完整路径或相对路径)
 
 #### 2.5. 超链接
 
-[百度](http://www.baidu.com)
+[百度](https://www.baidu.com)
 
 * 语法：
 
         \[title\](链接地址)
+
+<https://www.baidu.com />
+
+* 语法：
+
+        <https://www.baidu.com />
 
 #### 2.6. &amp; 关键字
 
