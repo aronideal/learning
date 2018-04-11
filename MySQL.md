@@ -1,6 +1,6 @@
 
-MySQL用法
-=========
+MySQL 数据库的使用
+=================
 
 ## 1. 脚本语法
 
@@ -144,4 +144,29 @@ table_option:
 select_statement:
     [IGNORE | REPLACE] [AS] SELECT ...   (Some legal select statement)
 ```
+
+#### 1.4. 创建索引
+
+```mysql
+CREATE INDEX ind_name
+    ON `mydb`.`mytab2` (name)
+
+index_col_name:
+    col_name [(length)] [ASC | DESC]
+```
+
+* 语法：
+
+```mysql
+CREATE [UNIQUE|FULLTEXT|SPATIAL] INDEX index_name [index_type]
+    ON tbl_name (index_col_name,...)
+
+Index_type:
+    [BTREE | FULLTEXT | HASH | RTREE]
+
+index_col_name:
+    col_name [(length)] [ASC | DESC]
+```
+
+
 
