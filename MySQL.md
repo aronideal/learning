@@ -145,6 +145,62 @@ select_statement:
     [IGNORE | REPLACE] [AS] SELECT ...   (Some legal select statement)
 ```
 
+#### 1.4. 修改表结构
+
+```mysql
+ALTER TABLE `mydb`.`mytab1` RENAME TO `mytab1_new`;
+ALTER TABLE `mydb`.`mytab1` MODIFY COLUMN `name` varchar(40) UNIQUE NOT NULL COMMENT '名称';
+```
+
+* 语法：
+
+```mysql
+ALTER [IGNORE] TABLE tbl_name
+    alter_specification [, alter_specification] ...
+
+alter_specification:
+    ADD [COLUMN] column_definition [FIRST | AFTER col_name ]
+  | ADD [COLUMN] (column_definition,...)
+  | ADD INDEX [index_name] [index_type] (index_col_name,...)
+  | ADD [CONSTRAINT [symbol]]
+        PRIMARY KEY [index_type] (index_col_name,...)
+  | ADD [CONSTRAINT [symbol]]
+        UNIQUE [index_name] [index_type] (index_col_name,...)
+  | ADD [FULLTEXT|SPATIAL] [index_name] (index_col_name,...)
+  | ADD [CONSTRAINT [symbol]]
+        FOREIGN KEY [index_name] (index_col_name,...)
+        [reference_definition]
+  | ALTER [COLUMN] col_name {SET DEFAULT literal | DROP DEFAULT}
+  | CHANGE [COLUMN] old_col_name column_definition
+        [FIRST|AFTER col_name]
+  | MODIFY [COLUMN] column_definition [FIRST | AFTER col_name]
+  | DROP [COLUMN] col_name
+  | DROP PRIMARY KEY
+  | DROP INDEX index_name
+  | DROP FOREIGN KEY fk_symbol
+  | DISABLE KEYS
+  | ENABLE KEYS
+  | RENAME [TO] new_tbl_name
+  | ORDER BY col_name
+  | CONVERT TO CHARACTER SET charset_name [COLLATE collation_name]
+  | [DEFAULT] CHARACTER SET charset_name [COLLATE collation_name]
+  | DISCARD TABLESPACE
+  | IMPORT TABLESPACE
+  | table_options
+```
+
+#### 1.6. 删除表
+
+#### 1.7. 查询表结构
+
+#### 1.5. 新增数据
+
+#### 1.6. 修改数据
+
+#### 1.7. 删除数据
+
+#### 1.7. 查询数据
+
 #### 1.4. 创建索引
 
 ```mysql
