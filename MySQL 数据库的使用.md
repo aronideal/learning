@@ -435,7 +435,8 @@ REVOKE priv_type [(column_list)] [, priv_type [(column_list)]] ...
     FROM user [, user] ...
 ```
 
-Privilege  Meaning  
+##### 权限类别 priv_type
+
 ALL [PRIVILEGES]  Sets all simple privileges except GRANT OPTION  
 ALTER  Allows use of ALTER TABLE  
 CREATE  Allows use of CREATE TABLE  
