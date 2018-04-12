@@ -351,12 +351,15 @@ SELECT
 ##### JOIN 关联查询
 
 > 外联
+
 > > 左外联 LEFT [OUTER] JOIN
+
 > > 右外联 RIGHT [OUTER] JOIN
+
 > 内联 [INNER] JOIN
 
 ```mysql
-LOCK TABLES `mydb`.`mytab1` READ;
+LOCK TABLES `mydb`.`mytab1` READ, `mydb`.`mytab2` READ;
 
 SELECT t1.`name` FROM `mydb`.`mytab1` t1
 LEFT JOIN `mydb`.`mytab2` t2
