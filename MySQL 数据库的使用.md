@@ -348,6 +348,42 @@ SELECT
       [FOR UPDATE | LOCK IN SHARE MODE]]
 ```
 
+##### JOIN 关联查询
+
+> 外联
+    > 左外联
+    > 右外联
+> 内联
+
+```mysql
+```
+
+* 语法：
+
+```mysql
+table_reference, table_reference
+table_reference [INNER | CROSS] JOIN table_reference [join_condition]
+table_reference STRAIGHT_JOIN table_reference
+table_reference LEFT [OUTER] JOIN table_reference [join_condition]
+table_reference NATURAL [LEFT [OUTER]] JOIN table_reference
+{ OJ table_reference LEFT OUTER JOIN table_reference
+    ON conditional_expr }
+table_reference RIGHT [OUTER] JOIN table_reference [join_condition]
+table_reference NATURAL [RIGHT [OUTER]] JOIN table_reference
+
+table_reference is defined as: 
+
+
+tbl_name [[AS] alias]
+    [[USE INDEX (key_list)]
+      | [IGNORE INDEX (key_list)]
+      | [FORCE INDEX (key_list)]]
+
+join_condition is defined as: 
+
+ON conditional_expr | USING (column_list)
+```
+
 ##### UNION 联合查询
 
 ```mysql
