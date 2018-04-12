@@ -470,6 +470,9 @@ SET PASSWORD FOR user = PASSWORD('some password')
 ##### 授权
 
 ```mysql
+GRANT ALL PRIVILEGES ON `mydb`.* TO 'myuser'@'localhost' IDENTIFIED BY PASSWORD '123456';
+
+FLUSH PRIVILEGES;
 ```
 
 * 语法：
@@ -493,6 +496,9 @@ GRANT priv_type [(column_list)] [, priv_type [(column_list)]] ...
 ##### 撤销权限
 
 ```mysql
+REVOKE ALL PRIVILEGES ON `mydb`.* FROM 'myuser'@'localhost';
+
+FLUSH PRIVILEGES;
 ```
 
 * 语法：
