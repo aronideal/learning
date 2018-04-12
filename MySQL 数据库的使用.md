@@ -361,7 +361,7 @@ SELECT
 ```mysql
 LOCK TABLES `mydb`.`mytab1` READ, `mydb`.`mytab2` READ;
 
-SELECT t1.`name` FROM `mydb`.`mytab1` t1
+SELECT t1.`name`, t2.`name` FROM `mydb`.`mytab1` t1
 LEFT JOIN `mydb`.`mytab2` t2
 ON t1.`tab2_id`=t2.`id`;
 
@@ -397,9 +397,13 @@ ON conditional_expr | USING (column_list)
 ##### UNION 联合查询
 
 ```mysql
+LOCK TABLES `mydb`.`mytab1` READ, `mydb`.`mytab2` READ;
+
 SELECT name FROM `mydb`.`mytab1`
 UNION
-SELECT name FROM `mydb`.`mytab2`
+SELECT name FROM `mydb`.`mytab2`;
+
+UNLOCK TABLES;
 ```
 
 * 语法：
