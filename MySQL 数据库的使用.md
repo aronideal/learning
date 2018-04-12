@@ -348,6 +348,24 @@ SELECT
       [FOR UPDATE | LOCK IN SHARE MODE]]
 ```
 
+##### UNION 联合查询
+
+```mysql
+SELECT name FROM `mydb`.`mytab1`
+UNION
+SELECT name FROM `mydb`.`mytab2`
+```
+
+* 语法：
+
+```mysql
+SELECT ...
+UNION [ALL | DISTINCT]
+SELECT ...
+  [UNION [ALL | DISTINCT]
+   SELECT ...]
+```
+
 ## 4. 索引
 
 #### 4.1. 创建索引
