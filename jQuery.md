@@ -1,5 +1,5 @@
 
-## window.onload
+## 页面加载回调，同 window.onload
 
 ```javascript
 $(document).ready(function() {
@@ -14,7 +14,7 @@ $('.class') // 按 Class 获取
 $('元素') // 按元素获取
 ```
 
-## ajax
+## ajax 请求
 
 ```javascript
 $.ajax({
