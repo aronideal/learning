@@ -19,7 +19,8 @@ $('元素') // 按元素获取
 ```javascript
 $.ajax({
     url: 'url 地址',
-    method: 'POST', // 默认 GET。GET/POST/PUT
+    type: 'POST', // 默认 GET。GET/POST/PUT
+    method: 'POST', // 1.9版本后才新增，兼容请使用 type。 默认 GET。GET/POST/PUT
     data: {},
     dataType: 'json', // Ajax 响应数据类型。xml/html/script/json/jsonp/text
     async: true, // 默认 true,
