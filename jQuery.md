@@ -19,6 +19,8 @@ $('元素') // 按元素获取
 ```javascript
 $.ajax({
     url: 'url 地址',
+    username: '认证用户名',
+    password: '认证密码',
     type: 'POST', // 默认 GET。GET/POST/PUT
     method: 'POST', // 1.9版本后才新增，兼容请使用 type。 默认 GET。GET/POST/PUT
     data: {},
