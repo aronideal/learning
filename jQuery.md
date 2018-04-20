@@ -6,14 +6,6 @@ $(document).ready(function() {
 });
 ```
 
-## 选择器
-
-```javascript
-$('#id') // 按 ID 获取
-$('.class') // 按 Class 获取
-$('元素') // 按元素获取
-```
-
 ## ajax 请求
 
 ```javascript
@@ -36,16 +28,39 @@ $.ajax({
 });
 ```
 
+## 选择器
+
+```javascript
+$('#id') // 按 ID 获取
+$('.class') // 按 Class 获取
+$('元素') // 按元素获取
+```
+
 ## jQuery 对象操作
 
-#### 取值 & 赋值
+#### 判断 class 定义 & 添加 class 定义 & 移除 class 定义
+
+```javascript
+#('<选择器>').hasClass('className')
+#('<选择器>').addClass('className')
+#('<选择器>').removeClass('className')
+```
+
+#### 取值 & 赋值，同 element.value
 
 ```javascript
 #('<选择器>').val()
 #('<选择器>').val('new value')
 ```
 
-## 获得html & 设置html，同 element.interHTML
+## 获得内部文本 & 设置内部文本，同 element.interText
+
+```javascript
+#('<选择器>').text()
+#('<选择器>').text('sssss')
+```
+
+## 获得内部html & 设置内部html，同 element.interHTML
 
 ```javascript
 #('<选择器>').html()
