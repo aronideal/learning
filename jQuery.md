@@ -44,3 +44,10 @@ $.ajax({
 #('<选择器>').val()
 #('<选择器>').val('new value')
 ```
+
+## 获得html & 设置html，同 element.interHTML
+
+```javascript
+#('<选择器>').html()
+#('<选择器>').html('<br/>')
+```
