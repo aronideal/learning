@@ -17,7 +17,28 @@ Javascript Object = JSON.parse(JSON String)
 JSON String = JSON.stringify(Javascript Object)
 ```
 
-## 3. 模块使用
+## 3. 模块
+
+#### 创建模块 test.js
+
+```javascript
+// 定义模块的函数
+var func1 = function() {
+    return "这是模块1";
+};
+
+module.exports = {
+    func1 : func1
+};
+```
+
+#### 使用模块
+
+```javascript
+var test = require("./test");
+
+console.log(test.func1());
+```
 
 #### 3.1. 建立 HTTP 服务，文件名 testhttp.js
 
